@@ -9,12 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "88f10616dbe7e65b",
+      "uid" : "9e4a5daba24003a0",
       "status" : "passed",
       "time" : {
-        "start" : 1654056194437,
-        "stop" : 1654056201809,
-        "duration" : 7372
+        "start" : 1654398075038,
+        "stop" : 1654398081365,
+        "duration" : 6327
       }
     } ]
   },
@@ -28,13 +28,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ab4a4394bac718fb",
+      "uid" : "fd6d73eaabe63d79",
       "status" : "failed",
       "statusDetails" : "expect(received).toBe(expected) // Object.is equality\n\n- Expected  -  1\n+ Received  + 17\n\n- We couldn’t find any repositories matching 'qzzsa' You could try an advanced search.\n+\n+     \n+     \n+\n+\n+\n+\n+   \n+     \n+       We couldn’t find any repositories matching 'qzzsa'\n+     \n+\n+       You could try an advanced search.\n+\n+\n+\n+",
       "time" : {
-        "start" : 1654056201809,
-        "stop" : 1654056209227,
-        "duration" : 7418
+        "start" : 1654398081366,
+        "stop" : 1654398087858,
+        "duration" : 6492
       }
     } ]
   }
