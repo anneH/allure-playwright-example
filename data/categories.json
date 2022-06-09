@@ -6,13 +6,13 @@
       "name" : "expect(received).toBe(expected) // Object.is equality\n\n- Expected  -  1\n+ Received  + 17\n\n- We couldn’t find any repositories matching 'qzzsa' You could try an advanced search.\n+\n+     \n+     \n+\n+\n+\n+\n+   \n+     \n+       We couldn’t find any repositories matching 'qzzsa'\n+     \n+\n+       You could try an advanced search.\n+\n+\n+\n+",
       "children" : [ {
         "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-        "uid" : "fd6d73eaabe63d79",
+        "uid" : "56c58396aa4a7236",
         "parentUid" : "70ea68863addd938e6f98d9cf9158142",
         "status" : "failed",
         "time" : {
-          "start" : 1654398081366,
-          "stop" : 1654398087858,
-          "duration" : 6492
+          "start" : 1654752438270,
+          "stop" : 1654752444946,
+          "duration" : 6676
         },
         "flaky" : false,
         "newFailed" : false,
