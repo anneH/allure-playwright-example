@@ -17,20 +17,24 @@ jobs:
       - run: npm install
       - run: npm install -g docker 
       - run: docker exec -u root -t -i container_id /bin/bash
-      - run: apt-get update
-      - run: apt-get -y install sudo
-      - run: sudo apt install openjdk-8-jdk -y
-      - run: export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-      - run: export PATH=$PATH:$JAVA_HOME/bin
-      - run: npm i -D playwright @playwright/test
-      - run: npm i -D experimental-allure-playwright 
-      - run: npm i -D allure-commandline
-      - run: npx playwright test --reporter=experimental-allure-playwright ||true
-      - run: npx allure generate ./allure-results --clean
-      - run: npm install gh-pages -g
-      - run: git config user.email "anne.h@mailfence.com"
-      - run: git config user.name "anneH"
-      - run: gh-pages --dist ./allure-report
+      - run: |
+           apt-get update 
+           apt-get -y install sudo
+           sudo apt install openjdk-8-jdk -y
+           export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+           export PATH=$PATH:$JAVA_HOME/bin
+      - run: | 
+           npm i -D playwright @playwright/test
+           npm i -D experimental-allure-playwright 
+      - run: | 
+           npm i -D allure-commandline
+           npx playwright test --reporter=experimental-allure-playwright ||true
+           npx allure generate ./allure-results --clean
+           npm install gh-pages -g
+      - run: |
+           git config user.email "anne.h@mailfence.com"
+           git config user.name "anneH"
+           gh-pages --dist ./allure-report
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
