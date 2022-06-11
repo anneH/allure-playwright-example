@@ -53,7 +53,7 @@ jobs:
           root: workspace
           # Must be relative path from root
           paths:
-            - ./allure-report
+            - ./allure-results
   
   publish-report:
     executor: my-executor
