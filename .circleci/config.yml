@@ -43,7 +43,7 @@ jobs:
           docker save -o < ~/circleci-demo-workflows/image mcr.microsoft.com/playwright:v1.22.0-focal
       - persist_to_workspace:
           root: .
-          paths: [~/circleci-demo-workflows/image]
+          paths: [image]
   
   publish-report:
     docker:
