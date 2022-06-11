@@ -7,7 +7,7 @@ jobs:
   playwright-test:
     docker:
       - image: mcr.microsoft.com/playwright:v1.22.0-focal
-    working_directory: ~/. 
+    working_directory: ~/circleci-demo-workflows
     environment:
       NODE_ENV: development
     steps:
@@ -40,10 +40,10 @@ jobs:
            npx playwright test --reporter=experimental-allure-playwright ||true
            npx allure generate ./allure-results --clean
       - run:
-          docker save -o < ~/image mcr.microsoft.com/playwright:v1.22.0-focal
+          docker save -o < ~/circleci-demo-workflows/image mcr.microsoft.com/playwright:v1.22.0-focal
       - persist_to_workspace:
           root: .
-          paths: [~/image]
+          paths: [~/circleci-demo-workflows/image]
   
   publish-report:
     docker:
