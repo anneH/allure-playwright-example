@@ -7,6 +7,7 @@ jobs:
   playwright-test:
     docker:
       - image: mcr.microsoft.com/playwright:v1.22.0-focal
+    working_directory: ~/circleci-workspace
     environment:
       NODE_ENV: development
     steps:
@@ -39,11 +40,24 @@ jobs:
            npx playwright test --reporter=experimental-allure-playwright ||true
            npx allure generate ./allure-results --clean
       - run:
-           name: Install Github Pages
-           command: npm install gh-pages -g
+          docker save -o <~/circleci-workspace/image mcr.microsoft.com/playwright:v1.22.0-focal
+      - persist_to_workspace:
+          root: .
+          paths: [~/circleci-workspace/image]
+  
+  publish-report:
+    docker:
+      - image: mcr.microsoft.com/playwright:v1.22.0-focal
+    steps:   
+      - attach_workspace:
+          at: ~/circleci-workspace
+      - run: docker load -i ~/circleci-workspace/image
       - run:
-           name: Publish report to Github Pages
-           command: |
+          name: Install Github Pages
+          command: npm install gh-pages -g
+      - run:
+          name: Publish report to Github Pages
+          command: |
             git config user.email "anne.h@mailfence.com"
             git config user.name "anneH"
             gh-pages --dist ./allure-report
@@ -54,3 +68,4 @@ workflows:
   e2e-test-workflow:
     jobs:
       - playwright-test
+      - publish-report
