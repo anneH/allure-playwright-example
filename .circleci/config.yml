@@ -10,7 +10,7 @@ executors:
       - image: mcr.microsoft.com/playwright:v1.22.0-focal
      environment:
       NODE_ENV: development
-      working_directory: ~/allure-playwright-example/work
+      working_directory: ~/.
      
 jobs:
   playwright-test:
@@ -60,7 +60,7 @@ jobs:
     steps:
       - attach_workspace:
           # Must be absolute path or relative path from working_directory
-          at: allure-playwright-example/workspace
+          at: /workspace
       - run:
           name: Install Github Pages
           command: npm install gh-pages -g
