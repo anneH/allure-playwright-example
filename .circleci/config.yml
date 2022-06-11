@@ -40,10 +40,10 @@ jobs:
            npx playwright test --reporter=experimental-allure-playwright ||true
            npx allure generate ./allure-results --clean
       - run:
-          docker save -o < ~/circleci-demo-workflows/image mcr.microsoft.com/playwright:v1.22.0-focal
+          docker save -o < ~/circleci-demo-workflows/image.tar mcr.microsoft.com/playwright:v1.22.0-focal
       - persist_to_workspace:
           root: .
-          paths: [image]
+          paths: [image.tar]
   
   publish-report:
     docker:
@@ -51,7 +51,7 @@ jobs:
     steps:   
       - attach_workspace:
           at: ~/circleci-workspace
-      - run: docker load -i ~/circleci-workspace/image
+      - run: docker load -i ~/circleci-workspace/image.tar
       - run:
           name: Install Github Pages
           command: npm install gh-pages -g
