@@ -53,14 +53,14 @@ jobs:
           root: workspace
           # Must be relative path from root
           paths:
-            - echo-output
+            - ./allure-report
   
   publish-report:
     executor: my-executor
     steps:
       - attach_workspace:
           # Must be absolute path or relative path from working_directory
-          at: /workspace
+          at: /workspace/allure-report
       - run:
           name: Install Github Pages
           command: npm install gh-pages -g
