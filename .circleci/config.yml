@@ -17,7 +17,6 @@ jobs:
     executor: my-executor
     steps:
       - run: mkdir -p workspace
-      - run: echo "Hello, world!" > workspace/echo-output
       - add_ssh_keys:
           fingerprints:
             - "d6:36:58:af:d8:57:47:db:30:77:62:ea:40:f7:03:03"
@@ -53,14 +52,14 @@ jobs:
           root: workspace
           # Must be relative path from root
           paths:
-            - allure-report
+            - work
   
   publish-report:
     executor: my-executor
     steps:
       - attach_workspace:
           # Must be absolute path or relative path from working_directory
-          at: /workspace/allure-report
+          at: /workspace/work
       - run:
           name: Install Github Pages
           command: npm install gh-pages -g
