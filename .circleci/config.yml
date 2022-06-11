@@ -10,7 +10,7 @@ executors:
       - image: mcr.microsoft.com/playwright:v1.22.0-focal
      environment:
       NODE_ENV: development
-      working_directory: allure-playwright-example
+      working_directory: ~/allure-playwright-example/work
      
 jobs:
   playwright-test:
@@ -21,7 +21,8 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "d6:36:58:af:d8:57:47:db:30:77:62:ea:40:f7:03:03"
-      - checkout
+      - checkout:
+            path: ~/allure-playwright-example
       - run: npm install
       - run: npm install -g docker 
       - run: docker exec -u root -t -i container_id /bin/bash
