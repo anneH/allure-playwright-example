@@ -10,7 +10,6 @@ executors:
       - image: mcr.microsoft.com/playwright:v1.22.0-focal
      environment:
       NODE_ENV: development
-      workspace: ~/allure-playwright-example
      
 jobs:
   playwright-test:
