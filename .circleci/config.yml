@@ -3,13 +3,17 @@
 version: 2.1
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
+
+executors:
+  my-executor:
+     docker:
+      - image: mcr.microsoft.com/playwright:v1.22.0-focal
+     environment:
+      NODE_ENV: development
+     working_directory: /tmp
 jobs:
   playwright-test:
-    docker:
-      - image: mcr.microsoft.com/playwright:v1.22.0-focal
-    working_directory: ~/circleci-demo-workflows
-    environment:
-      NODE_ENV: development
+    executor: my-executor
     steps:
       - add_ssh_keys:
           fingerprints:
@@ -39,18 +43,20 @@ jobs:
           command: |
            npx playwright test --reporter=experimental-allure-playwright ||true
            npx allure generate ./allure-results --clean
-      - run:
-          docker save -o < ~/circleci-demo-workflows/image.tar mcr.microsoft.com/playwright:v1.22.0-focal
       - persist_to_workspace:
-          root: .
-          paths: [image.tar]
+          # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is
+          # taken to be the root directory of the workspace.
+          root: workspace
+          # Must be relative path from root
+          paths:
+            - echo-output
   
   publish-report:
-    docker:
-      - image: mcr.microsoft.com/playwright:v1.22.0-focal
-    steps:   
+    executor: my-executor
+    steps:
       - attach_workspace:
-          at: ~/circleci-workspace
+          # Must be absolute path or relative path from working_directory
+          at: /tmp/workspace
       - run: npm install -g docker 
       - run: docker load -i ~/circleci-workspace/image.tar
       - run:
@@ -69,4 +75,6 @@ workflows:
   e2e-test-workflow:
     jobs:
       - playwright-test
-      - publish-report
+      - publish-report:
+          requires:
+            - playwright-test
