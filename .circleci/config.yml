@@ -16,6 +16,8 @@ jobs:
   playwright-test:
     executor: my-executor
     steps:
+      - run: mkdir -p workspace
+      - run: echo "Hello, world!" > workspace/echo-output
       - add_ssh_keys:
           fingerprints:
             - "d6:36:58:af:d8:57:47:db:30:77:62:ea:40:f7:03:03"
@@ -47,10 +49,10 @@ jobs:
       - persist_to_workspace:
           # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is
           # taken to be the root directory of the workspace.
-          root: . 
+          root: workspace
           # Must be relative path from root
           paths:
-            [workspace]
+            - echo-output
   
   publish-report:
     executor: my-executor
