@@ -10,7 +10,7 @@ executors:
       - image: mcr.microsoft.com/playwright:v1.22.0-focal
      environment:
       NODE_ENV: development
-     working_directory: /tmp
+     working_directory: . 
 jobs:
   playwright-test:
     executor: my-executor
@@ -56,7 +56,7 @@ jobs:
     steps:
       - attach_workspace:
           # Must be absolute path or relative path from working_directory
-          at: /tmp/workspace
+          at: ./workspace
       - run: npm install -g docker 
       - run: docker load -i ~/circleci-workspace/image.tar
       - run:
