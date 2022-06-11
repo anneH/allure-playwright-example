@@ -10,7 +10,7 @@ executors:
       - image: mcr.microsoft.com/playwright:v1.22.0-focal
      environment:
       NODE_ENV: development
-     working_directory: . 
+     working_directory: ~/ 
 jobs:
   playwright-test:
     executor: my-executor
