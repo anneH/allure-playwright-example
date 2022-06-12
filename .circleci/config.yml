@@ -37,15 +37,18 @@ jobs:
       - run:
           name: Install Allure
           command: npm i -D allure-commandline
-      - run:
+      - run: 
           name: Install Playwright
           command: |
            npm i -D playwright @playwright/test
+           npm i -D experimental-allure-playwright 
+      - run:
+          name: Install Allure
+          command: npm i -D allure-commandline
       - run: 
           name: Generate Allure report
           command: |
-           cd ~/allure-playwright-example
-           npx playwright test --reporter=experimental-allure-playwright,line
+           npx playwright test --reporter=experimental-allure-playwright ||true
            npx allure generate ./allure-results --clean
       - persist_to_workspace:
           # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is
