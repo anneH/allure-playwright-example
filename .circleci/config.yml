@@ -57,6 +57,9 @@ jobs:
   publish-report:
     executor: my-executor
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "d6:36:58:af:d8:57:47:db:30:77:62:ea:40:f7:03:03"
       - checkout:
           path: ~/allure-playwright-example
       - attach_workspace:
