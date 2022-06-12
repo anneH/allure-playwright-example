@@ -1,32 +1,14 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-  "name" : "packages",
   "children" : [ {
     "name" : "should verify search result with valid repository name",
-    "uid" : "129d4bbb5aae3647",
+    "uid" : "802bc944b5a4a24f",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
-      "start" : 1655038218692,
-      "stop" : 1655038228783,
-      "duration" : 10091
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "should verify search result with valid repository name 2",
-    "uid" : "cea9120ae7f27d5f",
-    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "skipped",
-    "time" : {
-      "start" : 1655038228783,
-      "stop" : 1655038228783,
-      "duration" : 0
+      "start" : 1655062798514,
+      "stop" : 1655062806406,
+      "duration" : 7892
     },
     "flaky" : false,
     "newFailed" : false,
@@ -37,12 +19,12 @@
     "parameters" : [ ]
   }, {
     "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-    "uid" : "4c0a47fea8009b65",
+    "uid" : "4b567a139a8c75a8",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "skipped",
     "time" : {
-      "start" : 1655038228784,
-      "stop" : 1655038228784,
+      "start" : 1655062806407,
+      "stop" : 1655062806407,
       "duration" : 0
     },
     "flaky" : false,
@@ -52,5 +34,23 @@
     "retriesCount" : 0,
     "retriesStatusChange" : false,
     "parameters" : [ ]
-  } ]
+  }, {
+    "name" : "should verify search result with valid repository name 2",
+    "uid" : "7bc89990e47fbf8c",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1655062806407,
+      "stop" : 1655062806407,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "packages"
 }
