@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "784c07a37090e350",
+      "uid" : "e2bcaeea65c5428d",
       "status" : "failed",
       "statusDetails" : "expect(received).toBe(expected) // Object.is equality\n\nExpected: \"microsoft/playwright2\"\nReceived: \"phuongnamvu/Playwright2\"",
       "time" : {
-        "start" : 1655005360645,
-        "stop" : 1655005369932,
-        "duration" : 9287
+        "start" : 1655037297775,
+        "stop" : 1655037306851,
+        "duration" : 9076
       }
     } ]
   },
@@ -29,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d4dc5258847f6d51",
+      "uid" : "683f24b051bd0925",
       "status" : "passed",
       "time" : {
-        "start" : 1655005350177,
-        "stop" : 1655005360645,
-        "duration" : 10468
+        "start" : 1655037288256,
+        "stop" : 1655037297774,
+        "duration" : 9518
       }
     } ]
   },
@@ -48,13 +48,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "adf6932f1fa29198",
+      "uid" : "f846d55ce2de2621",
       "status" : "failed",
       "statusDetails" : "expect(received).toBe(expected) // Object.is equality\n\n- Expected  -  1\n+ Received  + 17\n\n- We couldn’t find any repositories matching 'qzzsa' You could try an advanced search.\n+\n+     \n+     \n+\n+\n+\n+\n+   \n+     \n+       We couldn’t find any repositories matching 'qzzsa'\n+     \n+\n+       You could try an advanced search.\n+\n+\n+\n+",
       "time" : {
-        "start" : 1655005370503,
-        "stop" : 1655005380396,
-        "duration" : 9893
+        "start" : 1655037307366,
+        "stop" : 1655037316810,
+        "duration" : 9444
       }
     } ]
   }
