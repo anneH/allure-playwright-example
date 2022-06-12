@@ -38,7 +38,9 @@ jobs:
           command: npm i -D allure-commandline
       - run:
           name: Install Playwright
-          command: npm i -D playwright @playwright/test 
+          command: |
+           npm i -D playwright @playwright/test
+           npx playwright install 
       - run: 
           name: Generate Allure report
           command: |
