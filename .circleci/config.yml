@@ -23,7 +23,7 @@ jobs:
       - checkout:
             path: ~/allure-playwright-example
       - run: cd  ~/allure-playwright-example
-      - run: npm install
+      - run: npm install -g
       - run: npm install -g docker 
       - run: docker exec -u root -t -i container_id /bin/bash
       - run:
