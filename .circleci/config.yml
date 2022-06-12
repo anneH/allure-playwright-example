@@ -33,15 +33,15 @@ jobs:
            sudo apt install openjdk-8-jdk -y
            export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
            export PATH=$PATH:$JAVA_HOME/bin
-
       - run:
           name: Install Allure
           command: npm i -D allure-commandline
+      - run:
+          name: Install Playwright
+          command: npm i -D playwright @playwright/test 
       - run: 
           name: Generate Allure report
           command: |
-           npm i -D playwright @playwright/test
-           npm i -D experimental-allure-playwright
            cd ~/allure-playwright-example
            npx playwright test --reporter=experimental-allure-playwright,line
            npx allure generate ./allure-results --clean
