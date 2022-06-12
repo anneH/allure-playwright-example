@@ -44,6 +44,7 @@ jobs:
       - run: 
           name: Generate Allure report
           command: |
+           cd ~/allure-playwright-example
            npx playwright test --reporter=experimental-allure-playwright,line
            npx allure generate ./allure-results --clean
       - persist_to_workspace:
