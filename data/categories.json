@@ -1,18 +1,40 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
+      "name" : "expect(received).toBe(expected) // Object.is equality\n\nExpected: \"microsoft/playwright2\"\nReceived: \"phuongnamvu/Playwright2\"",
+      "children" : [ {
+        "name" : "should verify search result with valid repository name 2",
+        "uid" : "4ec76eca54cc2866",
+        "parentUid" : "fee39d3a06fecc3167a1ae347fc89c2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1655004997388,
+          "stop" : 1655005008740,
+          "duration" : 11352
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fee39d3a06fecc3167a1ae347fc89c2e"
+    }, {
       "name" : "expect(received).toBe(expected) // Object.is equality\n\n- Expected  -  1\n+ Received  + 17\n\n- We couldn’t find any repositories matching 'qzzsa' You could try an advanced search.\n+\n+     \n+     \n+\n+\n+\n+\n+   \n+     \n+       We couldn’t find any repositories matching 'qzzsa'\n+     \n+\n+       You could try an advanced search.\n+\n+\n+\n+",
       "children" : [ {
         "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-        "uid" : "814b8659341e58b7",
+        "uid" : "6c66f5277905431d",
         "parentUid" : "70ea68863addd938e6f98d9cf9158142",
         "status" : "failed",
         "time" : {
-          "start" : 1655004669853,
-          "stop" : 1655004679626,
-          "duration" : 9773
+          "start" : 1655005009288,
+          "stop" : 1655005020256,
+          "duration" : 10968
         },
         "flaky" : false,
         "newFailed" : false,
@@ -25,6 +47,5 @@
       "uid" : "70ea68863addd938e6f98d9cf9158142"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ],
-  "name" : "categories"
+  } ]
 }

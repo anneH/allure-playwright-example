@@ -1,4 +1,24 @@
 {
+  " tests/github-search.test.ts GitHub - Search Result should verify search result with valid repository name 2" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4ec76eca54cc2866",
+      "status" : "failed",
+      "statusDetails" : "expect(received).toBe(expected) // Object.is equality\n\nExpected: \"microsoft/playwright2\"\nReceived: \"phuongnamvu/Playwright2\"",
+      "time" : {
+        "start" : 1655004997388,
+        "stop" : 1655005008740,
+        "duration" : 11352
+      }
+    } ]
+  },
   " tests/github-search.test.ts GitHub - Search Result should verify search result with valid repository name" : {
     "statistic" : {
       "failed" : 0,
@@ -9,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "90e7a6ed26495ddd",
+      "uid" : "76354ff8ac3a7c36",
       "status" : "passed",
       "time" : {
-        "start" : 1655004659387,
-        "stop" : 1655004669852,
-        "duration" : 10465
+        "start" : 1655004986606,
+        "stop" : 1655004997388,
+        "duration" : 10782
       }
     } ]
   },
@@ -28,13 +48,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "814b8659341e58b7",
+      "uid" : "6c66f5277905431d",
       "status" : "failed",
       "statusDetails" : "expect(received).toBe(expected) // Object.is equality\n\n- Expected  -  1\n+ Received  + 17\n\n- We couldn’t find any repositories matching 'qzzsa' You could try an advanced search.\n+\n+     \n+     \n+\n+\n+\n+\n+   \n+     \n+       We couldn’t find any repositories matching 'qzzsa'\n+     \n+\n+       You could try an advanced search.\n+\n+\n+\n+",
       "time" : {
-        "start" : 1655004669853,
-        "stop" : 1655004679626,
-        "duration" : 9773
+        "start" : 1655005009288,
+        "stop" : 1655005020256,
+        "duration" : 10968
       }
     } ]
   }

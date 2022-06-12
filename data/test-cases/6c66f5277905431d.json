@@ -1,16 +1,16 @@
 {
-  "uid" : "814b8659341e58b7",
+  "uid" : "6c66f5277905431d",
   "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
   "fullName" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
   "historyId" : " tests/github-search.test.ts GitHub - Search Result should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
   "time" : {
-    "start" : 1655004669853,
-    "stop" : 1655004679626,
-    "duration" : 9773
+    "start" : 1655005009288,
+    "stop" : 1655005020256,
+    "duration" : 10968
   },
   "status" : "failed",
   "statusMessage" : "expect(received).toBe(expected) // Object.is equality\n\n- Expected  -  1\n+ Received  + 17\n\n- We couldn’t find any repositories matching 'qzzsa' You could try an advanced search.\n+\n+     \n+     \n+\n+\n+\n+\n+   \n+     \n+       We couldn’t find any repositories matching 'qzzsa'\n+     \n+\n+       You could try an advanced search.\n+\n+\n+\n+",
-  "statusTrace" : "\n    at /root/project/tests/github-search.test.ts:36:53",
+  "statusTrace" : "\n    at /root/project/tests/github-search.test.ts:50:53",
   "flaky" : false,
   "newFailed" : false,
   "newBroken" : false,
@@ -21,14 +21,14 @@
   "testStage" : {
     "status" : "failed",
     "statusMessage" : "expect(received).toBe(expected) // Object.is equality\n\n- Expected  -  1\n+ Received  + 17\n\n- We couldn’t find any repositories matching 'qzzsa' You could try an advanced search.\n+\n+     \n+     \n+\n+\n+\n+\n+   \n+     \n+       We couldn’t find any repositories matching 'qzzsa'\n+     \n+\n+       You could try an advanced search.\n+\n+\n+\n+",
-    "statusTrace" : "\n    at /root/project/tests/github-search.test.ts:36:53",
+    "statusTrace" : "\n    at /root/project/tests/github-search.test.ts:50:53",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "b55f6ecefa775e61",
+      "uid" : "be1ad0076483cbc7",
       "name" : "screenshot",
-      "source" : "b55f6ecefa775e61.png",
+      "source" : "be1ad0076483cbc7.png",
       "type" : "image/png",
-      "size" : 58661
+      "size" : 58107
     } ],
     "parameters" : [ ],
     "stepsCount" : 0,
@@ -67,6 +67,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "814b8659341e58b7.json",
+  "source" : "6c66f5277905431d.json",
   "parameterValues" : [ ]
 }
