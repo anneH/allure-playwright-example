@@ -57,6 +57,8 @@ jobs:
   publish-report:
     executor: my-executor
     steps:
+      - checkout:
+          path: ~/allure-playwright-example
       - attach_workspace:
           # Must be absolute path or relative path from working_directory
           at:  ~/allure-playwright-example/allure-report
