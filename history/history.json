@@ -1,40 +1,40 @@
 {
   " tests/github-search.test.ts GitHub - Search Result should verify search result with valid repository name 2" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
-      "skipped" : 0,
+      "skipped" : 1,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e2bcaeea65c5428d",
-      "status" : "failed",
-      "statusDetails" : "expect(received).toBe(expected) // Object.is equality\n\nExpected: \"microsoft/playwright2\"\nReceived: \"phuongnamvu/Playwright2\"",
+      "uid" : "3c47e4206daaf25f",
+      "status" : "skipped",
       "time" : {
-        "start" : 1655037297775,
-        "stop" : 1655037306851,
-        "duration" : 9076
+        "start" : 1655037892429,
+        "stop" : 1655037892429,
+        "duration" : 0
       }
     } ]
   },
   " tests/github-search.test.ts GitHub - Search Result should verify search result with valid repository name" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "683f24b051bd0925",
-      "status" : "passed",
+      "uid" : "5ec94cb0f6d42cbd",
+      "status" : "broken",
+      "statusDetails" : "Timeout of 30000ms exceeded.",
       "time" : {
-        "start" : 1655037288256,
-        "stop" : 1655037297774,
-        "duration" : 9518
+        "start" : 1655037861817,
+        "stop" : 1655037891985,
+        "duration" : 30168
       }
     } ]
   },
@@ -48,13 +48,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f846d55ce2de2621",
+      "uid" : "935985880c017018",
       "status" : "failed",
       "statusDetails" : "expect(received).toBe(expected) // Object.is equality\n\n- Expected  -  1\n+ Received  + 17\n\n- We couldn’t find any repositories matching 'qzzsa' You could try an advanced search.\n+\n+     \n+     \n+\n+\n+\n+\n+   \n+     \n+       We couldn’t find any repositories matching 'qzzsa'\n+     \n+\n+       You could try an advanced search.\n+\n+\n+\n+",
       "time" : {
-        "start" : 1655037307366,
-        "stop" : 1655037316810,
-        "duration" : 9444
+        "start" : 1655037892430,
+        "stop" : 1655037902215,
+        "duration" : 9785
       }
     } ]
   }
