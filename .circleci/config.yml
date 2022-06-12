@@ -68,6 +68,7 @@ jobs:
       - run:
           name: Publish report to Github Pages
           command: |
+           cd ~/allure-playwright-example
            git config user.email "anne.h@mailfence.com"
            git config user.name "anneH"
            gh-pages --dist ~/allure-playwright-example/allure-report
