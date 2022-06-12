@@ -1,18 +1,19 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
   "children" : [ {
     "name" : "tests/github-search.test.ts",
     "children" : [ {
       "name" : "GitHub - Search Result",
       "children" : [ {
         "name" : "should verify search result with valid repository name",
-        "uid" : "59d5a0039542e39e",
+        "uid" : "70d6ffbbb313e5ba",
         "parentUid" : "5d0e820ef63952035bed66c387de45ab",
         "status" : "passed",
         "time" : {
-          "start" : 1655002662754,
-          "stop" : 1655002669607,
-          "duration" : 6853
+          "start" : 1655002931514,
+          "stop" : 1655002939491,
+          "duration" : 7977
         },
         "flaky" : false,
         "newFailed" : false,
@@ -23,13 +24,13 @@
         "parameters" : [ ]
       }, {
         "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-        "uid" : "49604b88ad2853a7",
+        "uid" : "799b3e418fb10b83",
         "parentUid" : "5d0e820ef63952035bed66c387de45ab",
         "status" : "failed",
         "time" : {
-          "start" : 1655002669607,
-          "stop" : 1655002676218,
-          "duration" : 6611
+          "start" : 1655002939491,
+          "stop" : 1655002946367,
+          "duration" : 6876
         },
         "flaky" : false,
         "newFailed" : false,
@@ -42,6 +43,5 @@
       "uid" : "5d0e820ef63952035bed66c387de45ab"
     } ],
     "uid" : "1a8a06ebf18e8869b662cab3dd8d3dcf"
-  } ],
-  "name" : "suites"
+  } ]
 }
