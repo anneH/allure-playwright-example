@@ -10,7 +10,7 @@ executors:
       - image: mcr.microsoft.com/playwright:v1.22.0-focal
      environment:
       NODE_ENV: development
-      working_directory: ~/.
+      working_directory: ~/allure-playwright-example
      
 jobs:
   playwright-test:
@@ -49,17 +49,17 @@ jobs:
       - persist_to_workspace:
           # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is
           # taken to be the root directory of the workspace.
-          root: allure-playwright-example/workspace
+          root: .
           # Must be relative path from root
           paths:
-            - work
+            - allure-report
   
   publish-report:
     executor: my-executor
     steps:
       - attach_workspace:
           # Must be absolute path or relative path from working_directory
-          at: /workspace/work
+          at:  ~/allure-playwright-example
       - run:
           name: Install Github Pages
           command: npm install gh-pages -g
