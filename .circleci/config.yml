@@ -52,7 +52,7 @@ jobs:
           root: . 
           # Must be relative path from root
           paths:
-            - ~/allure-playwright-example/allure-report
+            - /allure-playwright-example/allure-report
   
   publish-report:
     executor: my-executor
