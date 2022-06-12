@@ -37,6 +37,7 @@ jobs:
           name: Install Playwright
           command: |
            npm i -D playwright @playwright/test
+           npm install -D @playwright/test
            npm i -D experimental-allure-playwright 
       - run:
           name: Install Allure
