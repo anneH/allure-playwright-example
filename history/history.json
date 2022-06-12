@@ -9,31 +9,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3016dbc6056b040",
+      "uid" : "90e7a6ed26495ddd",
       "status" : "passed",
       "time" : {
-        "start" : 1655004050360,
-        "stop" : 1655004058375,
-        "duration" : 8015
+        "start" : 1655004659387,
+        "stop" : 1655004669852,
+        "duration" : 10465
       }
     } ]
   },
   " tests/github-search.test.ts GitHub - Search Result should verify \"We couldn’t find any repositories\" message, after entering invalid keyword" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
-      "skipped" : 1,
+      "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "104867e5bfcd33bb",
-      "status" : "skipped",
+      "uid" : "814b8659341e58b7",
+      "status" : "failed",
+      "statusDetails" : "expect(received).toBe(expected) // Object.is equality\n\n- Expected  -  1\n+ Received  + 17\n\n- We couldn’t find any repositories matching 'qzzsa' You could try an advanced search.\n+\n+     \n+     \n+\n+\n+\n+\n+   \n+     \n+       We couldn’t find any repositories matching 'qzzsa'\n+     \n+\n+       You could try an advanced search.\n+\n+\n+\n+",
       "time" : {
-        "start" : 1655004058374,
-        "stop" : 1655004058374,
-        "duration" : 0
+        "start" : 1655004669853,
+        "stop" : 1655004679626,
+        "duration" : 9773
       }
     } ]
   }
