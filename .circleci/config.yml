@@ -48,7 +48,7 @@ jobs:
       - run: 
           name: Generate Allure report
           command: |
-           npx playwright test --reporter=experimental-allure-playwright ||true
+           npx playwright test --reporter=experimental-allure-playwright
            npx allure generate ./allure-results --clean
       - persist_to_workspace:
           # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is
