@@ -65,7 +65,7 @@ jobs:
           command: npm install gh-pages -g
       - run:
           name: Publish report to Github Pages
-          command: gh-pages --dist ./allure-report
+          command: gh-pages --dist ~/allure-playwright-example/allure-report
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
