@@ -1,12 +1,12 @@
 {
-  "uid" : "6c66f5277905431d",
+  "uid" : "adf6932f1fa29198",
   "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
   "fullName" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
   "historyId" : " tests/github-search.test.ts GitHub - Search Result should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
   "time" : {
-    "start" : 1655005009288,
-    "stop" : 1655005020256,
-    "duration" : 10968
+    "start" : 1655005370503,
+    "stop" : 1655005380396,
+    "duration" : 9893
   },
   "status" : "failed",
   "statusMessage" : "expect(received).toBe(expected) // Object.is equality\n\n- Expected  -  1\n+ Received  + 17\n\n- We couldn’t find any repositories matching 'qzzsa' You could try an advanced search.\n+\n+     \n+     \n+\n+\n+\n+\n+   \n+     \n+       We couldn’t find any repositories matching 'qzzsa'\n+     \n+\n+       You could try an advanced search.\n+\n+\n+\n+",
@@ -24,11 +24,11 @@
     "statusTrace" : "\n    at /root/project/tests/github-search.test.ts:50:53",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "be1ad0076483cbc7",
+      "uid" : "8839a2223efdcddb",
       "name" : "screenshot",
-      "source" : "be1ad0076483cbc7.png",
+      "source" : "8839a2223efdcddb.png",
       "type" : "image/png",
-      "size" : 58107
+      "size" : 58659
     } ],
     "parameters" : [ ],
     "stepsCount" : 0,
@@ -67,6 +67,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "6c66f5277905431d.json",
+  "source" : "adf6932f1fa29198.json",
   "parameterValues" : [ ]
 }

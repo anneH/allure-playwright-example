@@ -1,12 +1,12 @@
 {
-  "uid" : "4ec76eca54cc2866",
+  "uid" : "784c07a37090e350",
   "name" : "should verify search result with valid repository name 2",
   "fullName" : "should verify search result with valid repository name 2",
   "historyId" : " tests/github-search.test.ts GitHub - Search Result should verify search result with valid repository name 2",
   "time" : {
-    "start" : 1655004997388,
-    "stop" : 1655005008740,
-    "duration" : 11352
+    "start" : 1655005360645,
+    "stop" : 1655005369932,
+    "duration" : 9287
   },
   "status" : "failed",
   "statusMessage" : "expect(received).toBe(expected) // Object.is equality\n\nExpected: \"microsoft/playwright2\"\nReceived: \"phuongnamvu/Playwright2\"",
@@ -24,11 +24,11 @@
     "statusTrace" : "\n    at /root/project/tests/github-search.test.ts:36:59",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "bfc0c43864c19d0a",
+      "uid" : "10ef7fa26e9deb7e",
       "name" : "screenshot",
-      "source" : "bfc0c43864c19d0a.png",
+      "source" : "10ef7fa26e9deb7e.png",
       "type" : "image/png",
-      "size" : 75515
+      "size" : 77786
     } ],
     "parameters" : [ ],
     "stepsCount" : 0,
@@ -67,6 +67,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "4ec76eca54cc2866.json",
+  "source" : "784c07a37090e350.json",
   "parameterValues" : [ ]
 }
