@@ -9,11 +9,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3c47e4206daaf25f",
+      "uid" : "cea9120ae7f27d5f",
       "status" : "skipped",
       "time" : {
-        "start" : 1655037892429,
-        "stop" : 1655037892429,
+        "start" : 1655038228783,
+        "stop" : 1655038228783,
         "duration" : 0
       }
     } ]
@@ -21,40 +21,38 @@
   " tests/github-search.test.ts GitHub - Search Result should verify search result with valid repository name" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5ec94cb0f6d42cbd",
-      "status" : "broken",
-      "statusDetails" : "Timeout of 30000ms exceeded.",
+      "uid" : "129d4bbb5aae3647",
+      "status" : "passed",
       "time" : {
-        "start" : 1655037861817,
-        "stop" : 1655037891985,
-        "duration" : 30168
+        "start" : 1655038218692,
+        "stop" : 1655038228783,
+        "duration" : 10091
       }
     } ]
   },
   " tests/github-search.test.ts GitHub - Search Result should verify \"We couldn’t find any repositories\" message, after entering invalid keyword" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
-      "skipped" : 0,
+      "skipped" : 1,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "935985880c017018",
-      "status" : "failed",
-      "statusDetails" : "expect(received).toBe(expected) // Object.is equality\n\n- Expected  -  1\n+ Received  + 17\n\n- We couldn’t find any repositories matching 'qzzsa' You could try an advanced search.\n+\n+     \n+     \n+\n+\n+\n+\n+   \n+     \n+       We couldn’t find any repositories matching 'qzzsa'\n+     \n+\n+       You could try an advanced search.\n+\n+\n+\n+",
+      "uid" : "4c0a47fea8009b65",
+      "status" : "skipped",
       "time" : {
-        "start" : 1655037892430,
-        "stop" : 1655037902215,
-        "duration" : 9785
+        "start" : 1655038228784,
+        "stop" : 1655038228784,
+        "duration" : 0
       }
     } ]
   }

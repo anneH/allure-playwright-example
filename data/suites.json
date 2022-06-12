@@ -1,18 +1,19 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
   "children" : [ {
     "name" : "tests/github-search.test.ts",
     "children" : [ {
       "name" : "GitHub - Search Result",
       "children" : [ {
         "name" : "should verify search result with valid repository name",
-        "uid" : "5ec94cb0f6d42cbd",
+        "uid" : "129d4bbb5aae3647",
         "parentUid" : "5d0e820ef63952035bed66c387de45ab",
-        "status" : "broken",
+        "status" : "passed",
         "time" : {
-          "start" : 1655037861817,
-          "stop" : 1655037891985,
-          "duration" : 30168
+          "start" : 1655038218692,
+          "stop" : 1655038228783,
+          "duration" : 10091
         },
         "flaky" : false,
         "newFailed" : false,
@@ -23,12 +24,12 @@
         "parameters" : [ ]
       }, {
         "name" : "should verify search result with valid repository name 2",
-        "uid" : "3c47e4206daaf25f",
+        "uid" : "cea9120ae7f27d5f",
         "parentUid" : "5d0e820ef63952035bed66c387de45ab",
         "status" : "skipped",
         "time" : {
-          "start" : 1655037892429,
-          "stop" : 1655037892429,
+          "start" : 1655038228783,
+          "stop" : 1655038228783,
           "duration" : 0
         },
         "flaky" : false,
@@ -40,13 +41,13 @@
         "parameters" : [ ]
       }, {
         "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-        "uid" : "935985880c017018",
+        "uid" : "4c0a47fea8009b65",
         "parentUid" : "5d0e820ef63952035bed66c387de45ab",
-        "status" : "failed",
+        "status" : "skipped",
         "time" : {
-          "start" : 1655037892430,
-          "stop" : 1655037902215,
-          "duration" : 9785
+          "start" : 1655038228784,
+          "stop" : 1655038228784,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
@@ -59,6 +60,5 @@
       "uid" : "5d0e820ef63952035bed66c387de45ab"
     } ],
     "uid" : "1a8a06ebf18e8869b662cab3dd8d3dcf"
-  } ],
-  "name" : "suites"
+  } ]
 }

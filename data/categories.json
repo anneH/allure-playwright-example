@@ -1,55 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "Timeout of 30000ms exceeded.",
-      "children" : [ {
-        "name" : "should verify search result with valid repository name",
-        "uid" : "5ec94cb0f6d42cbd",
-        "parentUid" : "243d80d303fd3cc7cb395edf69aec83a",
-        "status" : "broken",
-        "time" : {
-          "start" : 1655037861817,
-          "stop" : 1655037891985,
-          "duration" : 30168
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "243d80d303fd3cc7cb395edf69aec83a"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  }, {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "expect(received).toBe(expected) // Object.is equality\n\n- Expected  -  1\n+ Received  + 17\n\n- We couldn’t find any repositories matching 'qzzsa' You could try an advanced search.\n+\n+     \n+     \n+\n+\n+\n+\n+   \n+     \n+       We couldn’t find any repositories matching 'qzzsa'\n+     \n+\n+       You could try an advanced search.\n+\n+\n+\n+",
-      "children" : [ {
-        "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-        "uid" : "935985880c017018",
-        "parentUid" : "70ea68863addd938e6f98d9cf9158142",
-        "status" : "failed",
-        "time" : {
-          "start" : 1655037892430,
-          "stop" : 1655037902215,
-          "duration" : 9785
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "70ea68863addd938e6f98d9cf9158142"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ],
-  "name" : "categories"
+  "name" : "categories",
+  "children" : [ ]
 }
