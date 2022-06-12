@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Thu Jun 09 05:42:02 UTC 2022","Thu Jun 09 05:42:08 UTC 2022","6408","","tests/github-search.test.ts","GitHub - Search Result","","","should verify ""We couldn’t find any repositories"" message, after entering invalid keyword",""
-"passed","Thu Jun 09 05:41:55 UTC 2022","Thu Jun 09 05:42:02 UTC 2022","6996","","tests/github-search.test.ts","GitHub - Search Result","","","should verify search result with valid repository name",""
