@@ -1,14 +1,30 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-  "name" : "timeline",
   "children" : [ {
+    "name" : "should verify search result with valid repository name",
+    "uid" : "210862748b4ab9ff",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1655321942416,
+      "stop" : 1655321950018,
+      "duration" : 7602
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
     "name" : "should verify search result with valid repository name 2",
-    "uid" : "f4f0ab30d3db2c06",
+    "uid" : "7517a49fdb86774f",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "skipped",
     "time" : {
-      "start" : 1655235642781,
-      "stop" : 1655235642781,
+      "start" : 1655321950018,
+      "stop" : 1655321950018,
       "duration" : 0
     },
     "flaky" : false,
@@ -20,12 +36,12 @@
     "parameters" : [ ]
   }, {
     "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-    "uid" : "99d5a23b16724edc",
+    "uid" : "5526e3ea29111722",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "skipped",
     "time" : {
-      "start" : 1655235642782,
-      "stop" : 1655235642782,
+      "start" : 1655321950018,
+      "stop" : 1655321950018,
       "duration" : 0
     },
     "flaky" : false,
@@ -35,22 +51,6 @@
     "retriesCount" : 0,
     "retriesStatusChange" : false,
     "parameters" : [ ]
-  }, {
-    "name" : "should verify search result with valid repository name",
-    "uid" : "89d647f2334f0ec5",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1655235632702,
-      "stop" : 1655235642781,
-      "duration" : 10079
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  } ]
+  } ],
+  "name" : "timeline"
 }
