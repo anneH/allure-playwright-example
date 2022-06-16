@@ -1,29 +1,29 @@
 [ {
-  "uid" : "210862748b4ab9ff",
+  "uid" : "66489209157349d4",
   "name" : "should verify search result with valid repository name",
   "time" : {
-    "start" : 1655321942416,
-    "stop" : 1655321950018,
-    "duration" : 7602
+    "start" : 1655408327958,
+    "stop" : 1655408338640,
+    "duration" : 10682
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "7517a49fdb86774f",
+  "uid" : "5ab375f6965f0b4c",
   "name" : "should verify search result with valid repository name 2",
   "time" : {
-    "start" : 1655321950018,
-    "stop" : 1655321950018,
+    "start" : 1655408338640,
+    "stop" : 1655408338640,
     "duration" : 0
   },
   "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "5526e3ea29111722",
+  "uid" : "9165d31817b6da34",
   "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
   "time" : {
-    "start" : 1655321950018,
-    "stop" : 1655321950018,
+    "start" : 1655408338641,
+    "stop" : 1655408338641,
     "duration" : 0
   },
   "status" : "skipped",
