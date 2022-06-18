@@ -9,11 +9,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1a191e28fe2a5548",
+      "uid" : "bc3c4900227874b0",
       "status" : "skipped",
       "time" : {
-        "start" : 1655511159873,
-        "stop" : 1655511159873,
+        "start" : 1655511491672,
+        "stop" : 1655511491672,
         "duration" : 0
       }
     } ]
@@ -28,12 +28,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5d5367118e7a2a5a",
+      "uid" : "3fcdefb10552b419",
       "status" : "passed",
       "time" : {
-        "start" : 1655511150981,
-        "stop" : 1655511159874,
-        "duration" : 8893
+        "start" : 1655511484473,
+        "stop" : 1655511491672,
+        "duration" : 7199
       }
     } ]
   },
@@ -47,11 +47,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ad1afa98145b8478",
+      "uid" : "df6d216330ded1b2",
       "status" : "skipped",
       "time" : {
-        "start" : 1655511159874,
-        "stop" : 1655511159874,
+        "start" : 1655511491672,
+        "stop" : 1655511491672,
         "duration" : 0
       }
     } ]
