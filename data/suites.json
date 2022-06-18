@@ -1,35 +1,19 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
   "children" : [ {
     "name" : "tests/github-search.test.ts",
     "children" : [ {
       "name" : "GitHub - Search Result",
       "children" : [ {
         "name" : "should verify search result with valid repository name",
-        "uid" : "51d5dce106819435",
+        "uid" : "b7066dc891e048cf",
         "parentUid" : "5d0e820ef63952035bed66c387de45ab",
         "status" : "passed",
         "time" : {
-          "start" : 1655583133141,
-          "stop" : 1655583141961,
-          "duration" : 8820
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "should verify search result with valid repository name 2",
-        "uid" : "c80c749bd4ef0e4f",
-        "parentUid" : "5d0e820ef63952035bed66c387de45ab",
-        "status" : "skipped",
-        "time" : {
-          "start" : 1655583141962,
-          "stop" : 1655583141962,
-          "duration" : 0
+          "start" : 1655592264178,
+          "stop" : 1655592272467,
+          "duration" : 8289
         },
         "flaky" : false,
         "newFailed" : false,
@@ -40,12 +24,29 @@
         "parameters" : [ ]
       }, {
         "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-        "uid" : "d5fe41dc6531963d",
+        "uid" : "ed89d54899a1e8d0",
         "parentUid" : "5d0e820ef63952035bed66c387de45ab",
         "status" : "skipped",
         "time" : {
-          "start" : 1655583141962,
-          "stop" : 1655583141962,
+          "start" : 1655592272468,
+          "stop" : 1655592272468,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "should verify search result with valid repository name 2",
+        "uid" : "619833cce06126b8",
+        "parentUid" : "5d0e820ef63952035bed66c387de45ab",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1655592272468,
+          "stop" : 1655592272468,
           "duration" : 0
         },
         "flaky" : false,
@@ -59,6 +60,5 @@
       "uid" : "5d0e820ef63952035bed66c387de45ab"
     } ],
     "uid" : "1a8a06ebf18e8869b662cab3dd8d3dcf"
-  } ],
-  "name" : "suites"
+  } ]
 }
