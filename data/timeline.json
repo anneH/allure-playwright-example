@@ -1,13 +1,30 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "should verify search result with valid repository name 2",
-    "uid" : "68da734e98d26940",
+    "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
+    "uid" : "d5fe41dc6531963d",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "skipped",
     "time" : {
-      "start" : 1655579513844,
-      "stop" : 1655579513844,
+      "start" : 1655583141962,
+      "stop" : 1655583141962,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "should verify search result with valid repository name 2",
+    "uid" : "c80c749bd4ef0e4f",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1655583141962,
+      "stop" : 1655583141962,
       "duration" : 0
     },
     "flaky" : false,
@@ -19,30 +36,13 @@
     "parameters" : [ ]
   }, {
     "name" : "should verify search result with valid repository name",
-    "uid" : "d7908ba74a236f4",
+    "uid" : "51d5dce106819435",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "start" : 1655579506735,
-      "stop" : 1655579513844,
-      "duration" : 7109
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-    "uid" : "d97249380d0622e6",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "skipped",
-    "time" : {
-      "start" : 1655579513845,
-      "stop" : 1655579513845,
-      "duration" : 0
+      "start" : 1655583133141,
+      "stop" : 1655583141961,
+      "duration" : 8820
     },
     "flaky" : false,
     "newFailed" : false,
