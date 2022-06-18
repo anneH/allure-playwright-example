@@ -6,30 +6,13 @@
       "name" : "GitHub - Search Result",
       "children" : [ {
         "name" : "should verify search result with valid repository name",
-        "uid" : "3fcdefb10552b419",
+        "uid" : "d7908ba74a236f4",
         "parentUid" : "5d0e820ef63952035bed66c387de45ab",
         "status" : "passed",
         "time" : {
-          "start" : 1655511484473,
-          "stop" : 1655511491672,
-          "duration" : 7199
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-        "uid" : "df6d216330ded1b2",
-        "parentUid" : "5d0e820ef63952035bed66c387de45ab",
-        "status" : "skipped",
-        "time" : {
-          "start" : 1655511491672,
-          "stop" : 1655511491672,
-          "duration" : 0
+          "start" : 1655579506735,
+          "stop" : 1655579513844,
+          "duration" : 7109
         },
         "flaky" : false,
         "newFailed" : false,
@@ -40,12 +23,29 @@
         "parameters" : [ ]
       }, {
         "name" : "should verify search result with valid repository name 2",
-        "uid" : "bc3c4900227874b0",
+        "uid" : "68da734e98d26940",
         "parentUid" : "5d0e820ef63952035bed66c387de45ab",
         "status" : "skipped",
         "time" : {
-          "start" : 1655511491672,
-          "stop" : 1655511491672,
+          "start" : 1655579513844,
+          "stop" : 1655579513844,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
+        "uid" : "d97249380d0622e6",
+        "parentUid" : "5d0e820ef63952035bed66c387de45ab",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1655579513845,
+          "stop" : 1655579513845,
           "duration" : 0
         },
         "flaky" : false,
