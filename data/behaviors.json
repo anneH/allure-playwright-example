@@ -1,32 +1,14 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "name" : "behaviors",
   "children" : [ {
     "name" : "should verify search result with valid repository name",
-    "uid" : "85ecf5f1109eb5d3",
+    "uid" : "5a4197bdd6113bfd",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1655592807706,
-      "stop" : 1655592815410,
-      "duration" : 7704
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-    "uid" : "a42199bec73be651",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "skipped",
-    "time" : {
-      "start" : 1655592815410,
-      "stop" : 1655592815410,
-      "duration" : 0
+      "start" : 1655593048376,
+      "stop" : 1655593055477,
+      "duration" : 7101
     },
     "flaky" : false,
     "newFailed" : false,
@@ -37,12 +19,12 @@
     "parameters" : [ ]
   }, {
     "name" : "should verify search result with valid repository name 2",
-    "uid" : "ff3df9434a67e846",
+    "uid" : "8592df8cf97f7374",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "skipped",
     "time" : {
-      "start" : 1655592815410,
-      "stop" : 1655592815410,
+      "start" : 1655593055478,
+      "stop" : 1655593055478,
       "duration" : 0
     },
     "flaky" : false,
@@ -52,5 +34,23 @@
     "retriesCount" : 0,
     "retriesStatusChange" : false,
     "parameters" : [ ]
-  } ]
+  }, {
+    "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
+    "uid" : "aa0bbcc1bc679a2",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1655593055478,
+      "stop" : 1655593055478,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "behaviors"
 }
