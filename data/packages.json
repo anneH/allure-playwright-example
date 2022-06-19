@@ -3,30 +3,13 @@
   "name" : "packages",
   "children" : [ {
     "name" : "should verify search result with valid repository name",
-    "uid" : "ebcc5471f5854305",
+    "uid" : "f78afb54c5a72336",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
-      "start" : 1655601698015,
-      "stop" : 1655601706998,
-      "duration" : 8983
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-    "uid" : "478216d17a80b0a7",
-    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "skipped",
-    "time" : {
-      "start" : 1655601706998,
-      "stop" : 1655601706998,
-      "duration" : 0
+      "start" : 1655602396095,
+      "stop" : 1655602405800,
+      "duration" : 9705
     },
     "flaky" : false,
     "newFailed" : false,
@@ -37,12 +20,29 @@
     "parameters" : [ ]
   }, {
     "name" : "should verify search result with valid repository name 2",
-    "uid" : "edc03ccd822e9d3a",
+    "uid" : "d1917307876c80fa",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "skipped",
     "time" : {
-      "start" : 1655601706998,
-      "stop" : 1655601706998,
+      "start" : 1655602405801,
+      "stop" : 1655602405801,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
+    "uid" : "3785609c25976068",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1655602405801,
+      "stop" : 1655602405801,
       "duration" : 0
     },
     "flaky" : false,
