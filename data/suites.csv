@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Sun Jun 19 00:39:59 UTC 2022","Sun Jun 19 00:40:29 UTC 2022","30139","","tests/github-search.test.ts","GitHub - Search Result","","","should verify search result with valid repository name",""
-"skipped","Sun Jun 19 00:40:29 UTC 2022","Sun Jun 19 00:40:29 UTC 2022","0","","tests/github-search.test.ts","GitHub - Search Result","","","should verify search result with valid repository name 2",""
-"skipped","Sun Jun 19 00:40:29 UTC 2022","Sun Jun 19 00:40:29 UTC 2022","0","","tests/github-search.test.ts","GitHub - Search Result","","","should verify ""We couldn’t find any repositories"" message, after entering invalid keyword",""
+"passed","Sun Jun 19 00:46:21 UTC 2022","Sun Jun 19 00:46:30 UTC 2022","9099","","tests/github-search.test.ts","GitHub - Search Result","","","should verify search result with valid repository name",""
+"skipped","Sun Jun 19 00:46:30 UTC 2022","Sun Jun 19 00:46:30 UTC 2022","0","","tests/github-search.test.ts","GitHub - Search Result","","","should verify search result with valid repository name 2",""
+"skipped","Sun Jun 19 00:46:30 UTC 2022","Sun Jun 19 00:46:30 UTC 2022","0","","tests/github-search.test.ts","GitHub - Search Result","","","should verify ""We couldn’t find any repositories"" message, after entering invalid keyword",""
