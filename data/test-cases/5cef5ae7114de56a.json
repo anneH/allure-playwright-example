@@ -1,14 +1,15 @@
 {
-  "uid" : "15b31bcbee783d9c",
+  "uid" : "5cef5ae7114de56a",
   "name" : "should verify search result with valid repository name",
   "fullName" : "should verify search result with valid repository name",
   "historyId" : " tests/github-search.test.ts GitHub - Search Result should verify search result with valid repository name",
   "time" : {
-    "start" : 1655598793171,
-    "stop" : 1655598802365,
-    "duration" : 9194
+    "start" : 1655599199215,
+    "stop" : 1655599229354,
+    "duration" : 30139
   },
-  "status" : "passed",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 30000ms exceeded.",
   "flaky" : false,
   "newFailed" : false,
   "newBroken" : false,
@@ -16,6 +17,23 @@
   "retriesCount" : 0,
   "retriesStatusChange" : false,
   "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Timeout of 30000ms exceeded.",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "91986588f427a2e7",
+      "name" : "screenshot",
+      "source" : "91986588f427a2e7.png",
+      "type" : "image/png",
+      "size" : 32902
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "language",
@@ -40,9 +58,13 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ ],
-    "categories" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
     "tags" : [ ]
   },
-  "source" : "15b31bcbee783d9c.json",
+  "source" : "5cef5ae7114de56a.json",
   "parameterValues" : [ ]
 }
