@@ -9,11 +9,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b830fedd4f0f0f44",
+      "uid" : "8e238aa5a5b93a3f",
       "status" : "skipped",
       "time" : {
-        "start" : 1656095954812,
-        "stop" : 1656095954812,
+        "start" : 1656099570791,
+        "stop" : 1656099570791,
         "duration" : 0
       }
     } ]
@@ -21,19 +21,20 @@
   " tests/github-search.test.ts GitHub - Search Result should verify search result with valid repository name" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "14b978c071100d04",
-      "status" : "passed",
+      "uid" : "926cb3973d6d2548",
+      "status" : "broken",
+      "statusDetails" : "Timeout of 30000ms exceeded.",
       "time" : {
-        "start" : 1656095945779,
-        "stop" : 1656095954812,
-        "duration" : 9033
+        "start" : 1656099540199,
+        "stop" : 1656099570343,
+        "duration" : 30144
       }
     } ]
   },
@@ -47,11 +48,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "95262b277b0e748a",
+      "uid" : "6b0e1a6b5fb2366a",
       "status" : "skipped",
       "time" : {
-        "start" : 1656095954812,
-        "stop" : 1656095954812,
+        "start" : 1656099570792,
+        "stop" : 1656099570792,
         "duration" : 0
       }
     } ]

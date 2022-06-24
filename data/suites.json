@@ -1,19 +1,18 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
-  "name" : "suites",
   "children" : [ {
     "name" : "tests/github-search.test.ts",
     "children" : [ {
       "name" : "GitHub - Search Result",
       "children" : [ {
         "name" : "should verify search result with valid repository name",
-        "uid" : "14b978c071100d04",
+        "uid" : "926cb3973d6d2548",
         "parentUid" : "5d0e820ef63952035bed66c387de45ab",
-        "status" : "passed",
+        "status" : "broken",
         "time" : {
-          "start" : 1656095945779,
-          "stop" : 1656095954812,
-          "duration" : 9033
+          "start" : 1656099540199,
+          "stop" : 1656099570343,
+          "duration" : 30144
         },
         "flaky" : false,
         "newFailed" : false,
@@ -24,12 +23,12 @@
         "parameters" : [ ]
       }, {
         "name" : "should verify search result with valid repository name 2",
-        "uid" : "b830fedd4f0f0f44",
+        "uid" : "8e238aa5a5b93a3f",
         "parentUid" : "5d0e820ef63952035bed66c387de45ab",
         "status" : "skipped",
         "time" : {
-          "start" : 1656095954812,
-          "stop" : 1656095954812,
+          "start" : 1656099570791,
+          "stop" : 1656099570791,
           "duration" : 0
         },
         "flaky" : false,
@@ -41,12 +40,12 @@
         "parameters" : [ ]
       }, {
         "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-        "uid" : "95262b277b0e748a",
+        "uid" : "6b0e1a6b5fb2366a",
         "parentUid" : "5d0e820ef63952035bed66c387de45ab",
         "status" : "skipped",
         "time" : {
-          "start" : 1656095954812,
-          "stop" : 1656095954812,
+          "start" : 1656099570792,
+          "stop" : 1656099570792,
           "duration" : 0
         },
         "flaky" : false,
@@ -60,5 +59,6 @@
       "uid" : "5d0e820ef63952035bed66c387de45ab"
     } ],
     "uid" : "1a8a06ebf18e8869b662cab3dd8d3dcf"
-  } ]
+  } ],
+  "name" : "suites"
 }
