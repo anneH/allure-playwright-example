@@ -1,14 +1,14 @@
 {
-  "uid" : "49cf3fcff7c9dc9e",
-  "name" : "should verify search result with valid repository name",
-  "fullName" : "should verify search result with valid repository name",
-  "historyId" : " tests/github-search.test.ts GitHub - Search Result should verify search result with valid repository name",
+  "uid" : "19692c50df5f729c",
+  "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
+  "fullName" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
+  "historyId" : " tests/github-search.test.ts GitHub - Search Result should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
   "time" : {
-    "start" : 1656094308906,
-    "stop" : 1656094316947,
-    "duration" : 8041
+    "start" : 1656094531117,
+    "stop" : 1656094531117,
+    "duration" : 0
   },
-  "status" : "passed",
+  "status" : "skipped",
   "flaky" : false,
   "newFailed" : false,
   "newBroken" : false,
@@ -43,6 +43,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "49cf3fcff7c9dc9e.json",
+  "source" : "19692c50df5f729c.json",
   "parameterValues" : [ ]
 }
