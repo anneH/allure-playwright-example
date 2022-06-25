@@ -1,30 +1,13 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "should verify search result with valid repository name",
-    "uid" : "926cb3973d6d2548",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "broken",
-    "time" : {
-      "start" : 1656099540199,
-      "stop" : 1656099570343,
-      "duration" : 30144
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-    "uid" : "6b0e1a6b5fb2366a",
+    "name" : "should verify search result with valid repository name 2",
+    "uid" : "3d328859d1357531",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "skipped",
     "time" : {
-      "start" : 1656099570792,
-      "stop" : 1656099570792,
+      "start" : 1656182355157,
+      "stop" : 1656182355157,
       "duration" : 0
     },
     "flaky" : false,
@@ -35,13 +18,30 @@
     "retriesStatusChange" : false,
     "parameters" : [ ]
   }, {
-    "name" : "should verify search result with valid repository name 2",
-    "uid" : "8e238aa5a5b93a3f",
+    "name" : "should verify search result with valid repository name",
+    "uid" : "9c40369b685f0553",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1656182345946,
+      "stop" : 1656182355158,
+      "duration" : 9212
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
+    "uid" : "cb924494668c95ce",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "skipped",
     "time" : {
-      "start" : 1656099570791,
-      "stop" : 1656099570791,
+      "start" : 1656182355158,
+      "stop" : 1656182355158,
       "duration" : 0
     },
     "flaky" : false,
