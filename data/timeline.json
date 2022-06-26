@@ -2,29 +2,12 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
     "name" : "should verify search result with valid repository name 2",
-    "uid" : "d37b3e01fe45371b",
+    "uid" : "58657dbea5e35553",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "skipped",
     "time" : {
-      "start" : 1656204618282,
-      "stop" : 1656204618282,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-    "uid" : "c537e34b9c535572",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "skipped",
-    "time" : {
-      "start" : 1656204618283,
-      "stop" : 1656204618283,
+      "start" : 1656205071519,
+      "stop" : 1656205071519,
       "duration" : 0
     },
     "flaky" : false,
@@ -36,13 +19,30 @@
     "parameters" : [ ]
   }, {
     "name" : "should verify search result with valid repository name",
-    "uid" : "6cc7132ff2cdf87d",
+    "uid" : "e539fa35a05c8f32",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "start" : 1656204609885,
-      "stop" : 1656204618282,
-      "duration" : 8397
+      "start" : 1656205063255,
+      "stop" : 1656205071518,
+      "duration" : 8263
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
+    "uid" : "a7e65a57337052c2",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1656205071519,
+      "stop" : 1656205071519,
+      "duration" : 0
     },
     "flaky" : false,
     "newFailed" : false,
