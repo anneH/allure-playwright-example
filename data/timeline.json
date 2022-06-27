@@ -1,31 +1,15 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
   "children" : [ {
-    "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-    "uid" : "ab369a9fcc4ffcd",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "skipped",
-    "time" : {
-      "start" : 1656272331462,
-      "stop" : 1656272331462,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
     "name" : "should verify search result with valid repository name",
-    "uid" : "f7adb0774556aeb0",
+    "uid" : "c8f8bbc40c6c7250",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "start" : 1656272323897,
-      "stop" : 1656272331462,
-      "duration" : 7565
+      "start" : 1656355139632,
+      "stop" : 1656355147512,
+      "duration" : 7880
     },
     "flaky" : false,
     "newFailed" : false,
@@ -36,12 +20,12 @@
     "parameters" : [ ]
   }, {
     "name" : "should verify search result with valid repository name 2",
-    "uid" : "902d08e6e4fc4f93",
+    "uid" : "547cb571d6a0a1b3",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "skipped",
     "time" : {
-      "start" : 1656272331461,
-      "stop" : 1656272331461,
+      "start" : 1656355147513,
+      "stop" : 1656355147513,
       "duration" : 0
     },
     "flaky" : false,
@@ -51,6 +35,22 @@
     "retriesCount" : 0,
     "retriesStatusChange" : false,
     "parameters" : [ ]
-  } ],
-  "name" : "timeline"
+  }, {
+    "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
+    "uid" : "cb094089385e8d6",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1656355147513,
+      "stop" : 1656355147513,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  } ]
 }
