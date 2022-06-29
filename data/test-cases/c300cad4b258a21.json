@@ -1,14 +1,14 @@
 {
-  "uid" : "25dc00cea17dd278",
-  "name" : "should verify search result with valid repository name 2",
-  "fullName" : "should verify search result with valid repository name 2",
-  "historyId" : " tests/github-search.test.ts GitHub - Search Result should verify search result with valid repository name 2",
+  "uid" : "c300cad4b258a21",
+  "name" : "should verify search result with valid repository name",
+  "fullName" : "should verify search result with valid repository name",
+  "historyId" : " tests/github-search.test.ts GitHub - Search Result should verify search result with valid repository name",
   "time" : {
-    "start" : 1656527947485,
-    "stop" : 1656527947485,
-    "duration" : 0
+    "start" : 1656531549453,
+    "stop" : 1656531557954,
+    "duration" : 8501
   },
-  "status" : "skipped",
+  "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "newBroken" : false,
@@ -43,6 +43,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "25dc00cea17dd278.json",
+  "source" : "c300cad4b258a21.json",
   "parameterValues" : [ ]
 }
