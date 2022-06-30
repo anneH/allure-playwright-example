@@ -6,13 +6,13 @@
       "name" : "GitHub - Search Result",
       "children" : [ {
         "name" : "should verify search result with valid repository name",
-        "uid" : "c300cad4b258a21",
+        "uid" : "6cfc38edb3a4ce0f",
         "parentUid" : "5d0e820ef63952035bed66c387de45ab",
         "status" : "passed",
         "time" : {
-          "start" : 1656531549453,
-          "stop" : 1656531557954,
-          "duration" : 8501
+          "start" : 1656556061467,
+          "stop" : 1656556069467,
+          "duration" : 8000
         },
         "flaky" : false,
         "newFailed" : false,
@@ -23,12 +23,12 @@
         "parameters" : [ ]
       }, {
         "name" : "should verify search result with valid repository name 2",
-        "uid" : "c6286d988b89794e",
+        "uid" : "94e690b6ccd1e673",
         "parentUid" : "5d0e820ef63952035bed66c387de45ab",
         "status" : "skipped",
         "time" : {
-          "start" : 1656531557954,
-          "stop" : 1656531557954,
+          "start" : 1656556069468,
+          "stop" : 1656556069468,
           "duration" : 0
         },
         "flaky" : false,
@@ -40,12 +40,12 @@
         "parameters" : [ ]
       }, {
         "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-        "uid" : "f64405c194e36593",
+        "uid" : "b6babb97a9a60720",
         "parentUid" : "5d0e820ef63952035bed66c387de45ab",
         "status" : "skipped",
         "time" : {
-          "start" : 1656531557954,
-          "stop" : 1656531557954,
+          "start" : 1656556069468,
+          "stop" : 1656556069468,
           "duration" : 0
         },
         "flaky" : false,
