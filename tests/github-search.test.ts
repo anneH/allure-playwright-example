@@ -27,8 +27,8 @@ test.describe('GitHub - Search Result', () => {
     const firstSearchResultLink = '.repo-list li a';
 
     // Test data
-    const keyword = 'playwright2';
-    const expectedLink = 'microsoft/playwright2';
+    const keyword = 'playwright';
+    const expectedLink = 'microsoft/playwright';
 
     await page.fill(searchField, keyword);
     await page.press(searchField, 'Enter');
