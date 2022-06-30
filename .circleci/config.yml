@@ -6,7 +6,7 @@ version: 2.1
 parameters:
   slack_notify:
     type: boolean
-    default: true
+    default: false
 orbs:
   slack: circleci/slack@4.10.1
 jobs:
