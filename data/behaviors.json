@@ -2,13 +2,13 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "should verify search result with valid repository name",
-    "uid" : "40e2de1ad1a79f0",
+    "uid" : "666cffa9171d3b3a",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1656557121684,
-      "stop" : 1656557129568,
-      "duration" : 7884
+      "start" : 1656557947518,
+      "stop" : 1656557955054,
+      "duration" : 7536
     },
     "flaky" : false,
     "newFailed" : false,
@@ -19,12 +19,12 @@
     "parameters" : [ ]
   }, {
     "name" : "should verify search result with valid repository name 2",
-    "uid" : "314e7a5c97d9cf6b",
+    "uid" : "eefebc17b53a09fb",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "skipped",
     "time" : {
-      "start" : 1656557129567,
-      "stop" : 1656557129567,
+      "start" : 1656557955054,
+      "stop" : 1656557955054,
       "duration" : 0
     },
     "flaky" : false,
@@ -36,12 +36,12 @@
     "parameters" : [ ]
   }, {
     "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-    "uid" : "246ab02a7a66e45b",
+    "uid" : "e9ac2dafe6d377a9",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "skipped",
     "time" : {
-      "start" : 1656557129568,
-      "stop" : 1656557129568,
+      "start" : 1656557955055,
+      "stop" : 1656557955055,
       "duration" : 0
     },
     "flaky" : false,
