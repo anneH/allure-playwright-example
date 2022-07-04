@@ -2,30 +2,13 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "should verify search result with valid repository name",
-    "uid" : "17fab5a3ccd08f0d",
+    "uid" : "c16d6a8f6a4ecb62",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1656833945630,
-      "stop" : 1656833955298,
-      "duration" : 9668
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
-    "uid" : "2bc93d9bb2e68619",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "skipped",
-    "time" : {
-      "start" : 1656833955299,
-      "stop" : 1656833955299,
-      "duration" : 0
+      "start" : 1656905940701,
+      "stop" : 1656905948732,
+      "duration" : 8031
     },
     "flaky" : false,
     "newFailed" : false,
@@ -36,12 +19,29 @@
     "parameters" : [ ]
   }, {
     "name" : "should verify search result with valid repository name 2",
-    "uid" : "5fe1d5a16b376810",
+    "uid" : "3a0e062c5c17dffc",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "skipped",
     "time" : {
-      "start" : 1656833955299,
-      "stop" : 1656833955299,
+      "start" : 1656905948732,
+      "stop" : 1656905948732,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
+    "uid" : "436ef90972b8d514",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1656905948732,
+      "stop" : 1656905948732,
       "duration" : 0
     },
     "flaky" : false,
