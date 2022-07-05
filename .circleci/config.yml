@@ -50,13 +50,12 @@ jobs:
           command: <artifacts.txt xargs -I % wget %?circle-token=$CIRCLE_TOKEN
           when: always
       - run:
-          name: Rename and copy history artifacts to allure-result
+          name: Generate allure report and copy history artifacts to allure-result
           command: |
            npx allure generate ./allure-results --clean
-            mv history.json?circle-token=${CIRCLE_TOKEN} history.json && mv history-trend.json?circle-token=${API_KEY} history-trend.json
-            cp history.json target/allure-results/history/ && cp history-trend.json allure-results/history/
+           cp allure-report/history/* ./allure-results/history
       - run:
-          name: Generate Allure Report
+          name: Publish Allure Report
           command: | 
               # npx allure generate ./allure-results --clean
               npm install gh-pages -g
