@@ -37,7 +37,7 @@ jobs:
              npx playwright test --reporter=experimental-allure-playwright
       - run:
           name: Make history directory for allure
-          command: mkdir target/allure-results/history
+          command: mkdir allure-results/history
           when: always       
       - run: 
           name: Get previous artifact links
@@ -50,9 +50,15 @@ jobs:
           command: <artifacts.txt xargs -I % wget %?circle-token=$CIRCLE_TOKEN
           when: always
       - run:
+          name: Rename and copy history artifacts to allure-result
+          command: |
+           npx allure generate ./allure-results --clean
+            mv history.json?circle-token=${CIRCLE_TOKEN} history.json && mv history-trend.json?circle-token=${API_KEY} history-trend.json
+            cp history.json target/allure-results/history/ && cp history-trend.json allure-results/history/
+      - run:
           name: Generate Allure Report
           command: | 
-              npx allure generate ./allure-results --clean
+              # npx allure generate ./allure-results --clean
               npm install gh-pages -g
               git config user.email "anne.h@mailfence.com"
               git config user.name "anneH"
