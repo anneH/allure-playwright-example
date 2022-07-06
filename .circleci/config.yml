@@ -42,7 +42,7 @@ jobs:
       - run: 
           name: Get previous artifact links
           command: |
-            curl -X GET "https://circleci.com/api/v2/project/github/anneH/allure-playwright-example/372/artifacts" \
+            curl -X GET "https://circleci.com/api/v1.1/project/github/anneH/allure-playwright-example/latest/artifacts" \
             --header 'Content-Type: application/json' \
             --header "Circle-Token: $CIRCLE_TOKEN"
             grep -o 'https:\/\/[^"]*Allure\/history\/.*\.json' > artifacts.txt || true
