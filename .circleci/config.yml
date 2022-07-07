@@ -45,8 +45,8 @@ jobs:
           command: |
             sudo apt -y install curl
             curl -X GET "https://circleci.com/api/v2/project/github/anneH/allure-playwright-example/${CIRCLE_PREVIOUS_BUILD}/artifacts"
-            --header 'Content-Type: application/json' \
-            --header 'Accept: application/json' \
+            --header "Content-Type: application/json" \
+            --header "Accept: application/json" \
             --header "Circle-Token: $CIRCLE_TOKEN" \
             grep -o 'https:\/\/[^"]*Allure\/history\/.*\.json' > artifacts.txt || true
           when: always
