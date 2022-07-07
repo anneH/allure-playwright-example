@@ -3,7 +3,6 @@
 version: 2.1
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
-command: export CIRCLE_PREVIOUS_BUILD=$CIRCLE_BUILD_NUM
 parameters:
   slack_notify:
     type: boolean
@@ -44,7 +43,7 @@ jobs:
           name: Get previous artifact links
           command: |
             sudo apt -y install curl
-            curl --location -g --request GET 'https://circleci.com/api/v2/project/github/anneH/allure-playwright-example/$CIRCLE_PREVIOUS_BUILD/artifacts' \
+            curl --location -g --request GET 'https://circleci.com/api/v2/project/github/anneH/allure-playwright-example/$CIRCLE_PREVIOUS_BUILD_NUM/artifacts' \
             --header 'Content-Type: application/json' \
             --header 'Accept: application/json' \
             --header 'Circle-Token: $CIRCLE_TOKEN'
