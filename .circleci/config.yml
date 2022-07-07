@@ -43,7 +43,7 @@ jobs:
           name: Get previous artifact links
           command: |
             sudo apt -y install curl
-            curl --location -g --request GET 'https://circleci.com/api/v2/project/github/anneH/allure-playwright-example/$CIRCLE_PREVIOUS_BUILD_NUM/artifacts' \
+            curl --location -g --request GET 'https://circleci.com/api/v2/project/github/anneH/allure-playwright-example/{{ $CIRCLE_PREVIOUS_BUILD_NUM }}/artifacts' \
             --header 'Content-Type: application/json' \
             --header 'Accept: application/json' \
             --header 'Circle-Token: $CIRCLE_TOKEN'
