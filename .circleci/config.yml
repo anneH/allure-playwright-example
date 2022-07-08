@@ -38,9 +38,7 @@ jobs:
       - run:
           name: Get history directory for allure
           command: |
-            mkdir gh
-            cd gh
-            git clone -b git@github.com:anneH/allure-playwright-example.git gh-pages
+            git clone git@github.com:anneH/allure-playwright-example.git gh-pages
           when: always       
       # - run: 
       #     name: Get previous artifact links
@@ -57,10 +55,10 @@ jobs:
       #     name: Download history artfacts
       #     command: <artifacts.txt xargs -I % wget %?circle-token=$CIRCLE_TOKEN
       #     when: always
-      # - run:
-      #     name: Generate allure report and copy history artifacts to allure-result
-      #     command: |
-      #      npx allure generate ./allure-results --clean
+      - run:
+          name: Generate allure report and copy history to allure-result
+          command: |
+           npx allure generate ./allure-results --clean
       #      cp allure-report/history/* ./allure-results/history
       - run:
           name: Publish Allure Report
