@@ -38,44 +38,24 @@ jobs:
       - run:
           name: Get history directory for allure
           command: |
-            git clone git@github.com:anneH/allure-playwright-example.git gh-pages
+            git clone -b gh-pages git@github.com:anneH/allure-playwright-example.git
           when: always       
-      # - run: 
-      #     name: Get previous artifact links
-      #     command: |
-      #       sudo apt -y install curl
-      #       curl --location -g --request GET 'https://circleci.com/api/v2/project/github/anneH/allure-playwright-example/380/artifacts' \
-      #       --header 'Content-Type: application/json' \
-      #       --header 'Accept: application/json' \
-      #       --header 'Circle-Token: $CIRCLE_TOKEN'
-      #       grep -o 'https:\/\/[^"]*Allure\/history\/.*\.json' > artifacts.txt || true
-          # when: always
-      # - run: cat artifacts.txt
-      # - run:
-      #     name: Download history artfacts
-      #     command: <artifacts.txt xargs -I % wget %?circle-token=$CIRCLE_TOKEN
-      #     when: always
       - run:
           name: Generate allure report and copy history to allure-result
           command: |
            npx allure generate ./allure-results --clean
-      #      cp allure-report/history/* ./allure-results/history
+           cp /gh-pages/history/* ./allure-results/history
       - run:
           name: Publish Allure Report
           command: | 
-              # npx allure generate ./allure-results --clean
+              allure generate allure-results --clean -o allure-report
               npm install gh-pages -g
               git config user.email "anne.h@mailfence.com"
               git config user.name "anneH"
               gh-pages --dist ./allure-report
           when: always
-      # - store_artifacts:
-      #     path: ./allure-report
-          # destination: /test-results
       - store_artifacts:
            path: allure-report
-      - store_test_results:
-           path: allure-results
      
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -105,3 +85,23 @@ workflows:
              branches:
                only:
                  - circleci-project-setup
+
+
+
+
+
+    # - run: 
+      #     name: Get previous artifact links
+      #     command: |
+      #       sudo apt -y install curl
+      #       curl --location -g --request GET 'https://circleci.com/api/v2/project/github/anneH/allure-playwright-example/380/artifacts' \
+      #       --header 'Content-Type: application/json' \
+      #       --header 'Accept: application/json' \
+      #       --header 'Circle-Token: $CIRCLE_TOKEN'
+      #       grep -o 'https:\/\/[^"]*Allure\/history\/.*\.json' > artifacts.txt || true
+          # when: always
+      # - run: cat artifacts.txt
+      # - run:
+      #     name: Download history artfacts
+      #     command: <artifacts.txt xargs -I % wget %?circle-token=$CIRCLE_TOKEN
+      #     when: always
