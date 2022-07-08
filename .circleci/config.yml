@@ -38,11 +38,9 @@ jobs:
       - run:
           name: Generate allure report with history
           command: |
-            cd ..
             git clone -b gh-pages git@github.com:anneH/allure-playwright-example.git gh-pages
-            cd allure-playwright-example
             npx allure generate ./allure-results --clean
-            cp -R ~/gh-pages/history ./allure-results
+            cp -R ./gh-pages/history ./allure-results
             npx allure generate ./allure-results --clean -o allure-report
           when: always 
       - run:
