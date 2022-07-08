@@ -67,7 +67,7 @@ workflows:
                 condition: <<pipeline.parameters.slack_notify>>
                 steps:
                  - slack/notify:
-                    channel: circleci
+                    channel: general
                     mentions: "<https://anneh.github.io/allure-playwright-example/|Test Results> or go to 'View job' > Artifacts > allure-report/index.html"
            filters:
              branches:
