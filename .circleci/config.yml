@@ -3,6 +3,12 @@
 version: 2.1
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
+parameters:
+  slack_notify:
+    type: boolean
+    default: true
+orbs:
+  slack: circleci/slack@4.10.1
 
 executors:
   my-executor:
@@ -42,11 +48,8 @@ jobs:
           command: |
            npm i -D playwright @playwright/test
            npm i -D experimental-allure-playwright 
-      - run:
-          name: Install Allure
-          command: npm i -D allure-commandline
       - run: 
-          name: Generate Allure report
+          name: Run tests and create allure results folder
           command: |
            npx playwright test --reporter=experimental-allure-playwright
            npx allure generate ./allure-results --clean
@@ -56,8 +59,13 @@ jobs:
           root: . 
           # Must be relative path from root
           paths:
-            - allure-report
-  
+            - allure-results
+
+  # add-allure-history:
+  #   executor: my-executor
+  #   steps:
+  #     -
+
   publish-report:
     executor: my-executor
     steps:
@@ -85,7 +93,15 @@ jobs:
 workflows:
   e2e-test-workflow:
     jobs:
-      - playwright-test
-      - publish-report:
-         requires:
-           - playwright-test
+       - playwright-test
+       - publish-report:
+          requires:
+            - playwright-test
+          context: slack
+          post-steps:
+             - when:
+                condition: << pipeline.parameters.slack_notify>>
+                steps:
+                 - slack/notify:
+                    channel: circleci
+                    mentions: "<https://anneh.github.io/allure-playwright-example/|Test Results> or go to 'View job' > Artifacts > allure-report/index.html"
