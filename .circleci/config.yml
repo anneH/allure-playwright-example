@@ -64,7 +64,8 @@ workflows:
            context: slack
            post-steps:
              - when:
-                condition: [ true, <<pipeline.parameters.slack_notify>> ]
+                condition: 
+                  - equal:[ true, <<pipeline.parameters.slack_notify>> ]
                 steps:
                  - slack/notify:
                     channel: circleci
