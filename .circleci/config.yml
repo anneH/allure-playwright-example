@@ -36,19 +36,16 @@ jobs:
           command: | 
              npx playwright test --reporter=experimental-allure-playwright
       - run:
-          name: Get history directory for allure
+          name: Generate allure report with history
           command: |
             git clone -b gh-pages git@github.com:anneH/allure-playwright-example.git
-          when: always       
-      - run:
-          name: Generate allure report and copy history to allure-result
-          command: |
-           npx allure generate ./allure-results --clean
-           cp /gh-pages/history/* ./allure-results/history
+            npx allure generate ./allure-results --clean
+            cp -R ./gh-pages/history/ ./allure-results
+            npx allure generate ./allure-results --clean -o allure-report
+          when: always 
       - run:
           name: Publish Allure Report
           command: | 
-              allure generate allure-results --clean -o allure-report
               npm install gh-pages -g
               git config user.email "anne.h@mailfence.com"
               git config user.name "anneH"
@@ -72,15 +69,6 @@ workflows:
                  - slack/notify:
                     channel: circleci
                     mentions: "<https://anneh.github.io/allure-playwright-example/|Test Results> or go to 'View job' > Artifacts > allure-report/index.html"
-    # triggers:
-    # #   - schedule:
-    # #       cron: '00 00 * * *'
-    # #       filters:
-    # #         branches:
-    # #           only:
-    # #             - circleci-project-setup
-    #   - schedule:
-    #       cron: '0 0 * * 1' #Sunday at 5pm
            filters:
              branches:
                only:
