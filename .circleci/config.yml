@@ -75,7 +75,7 @@ workflows:
            filters:
              branches:
                only:
-                 - c<<pipeline.parameters.branch>>
+                 - <<pipeline.parameters.branch>>
 
 
 
