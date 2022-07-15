@@ -47,8 +47,7 @@ jobs:
                       "fields": [
                         {
                           "type": "plain_text",
-                          "text": "Starting Automation Run!",
-                          "emoji": true
+                          "text": "Starting Automation Run!"
                         }
                       ]
                     }
