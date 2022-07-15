@@ -85,7 +85,6 @@ jobs:
 workflows:
   version: 2
   e2e-test-workflow:
-    when: <<pipeline.parameters.scheduled>>
     jobs:
       - playwright-test:
            context: slack
@@ -96,6 +95,8 @@ workflows:
                  - slack/notify:
                     channel: general
                     mentions: "<https://anneh.github.io/allure-playwright-example/|Test Results> or go to 'View job' > Artifacts > allure-report/index.html"      
+    
+    when: <<pipeline.parameters.scheduled>>
     triggers:
       - schedule:
           cron: '0 1 * * 4'
