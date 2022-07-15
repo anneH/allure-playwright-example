@@ -9,7 +9,7 @@ parameters:
     default: false
   branch:
     type: string
-    default: gh-pages
+    default: none
 orbs:
   slack: circleci/slack@4.10.1
 jobs:
