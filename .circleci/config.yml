@@ -7,9 +7,9 @@ parameters:
   slack_notify:
     type: boolean
     default: false
-  # branch:
-  #   type: string
-  #   default: none
+  branch_filter:
+     type: string
+     default: develop
   scheduled: 
     type: boolean
     default: true
@@ -103,7 +103,7 @@ workflows:
           filters: 
              branches:
                   only:
-                    - develop 
+                    - <<pipeline.parameters.branch_filter>>
            
           #  filters:
           #    branches:
