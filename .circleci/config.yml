@@ -9,7 +9,7 @@ parameters:
     default: false
   branch_filter:
      type: string
-     default: develop
+     default: circleci-project-setup
   scheduled: 
     type: boolean
     default: true
