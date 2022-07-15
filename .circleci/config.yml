@@ -34,24 +34,27 @@ jobs:
       - run: npm i -D playwright @playwright/test
       - run: npm i -D experimental-allure-playwright 
       - run: npm i -D allure-commandline
-      - slack/notify:
-          channel: general
-          custom: |
-            {
-              "blocks": [
+      - when:
+          condition: <<pipeline.parameters.slack_notify>>
+          steps:
+          - slack/notify:
+              channel: general
+              custom: |
                 {
-                  "type": "section",
-                  "fields": [
+                  "blocks": [
                     {
-                      "type": "plain_text",
-                      "text": "Starting Automation Run!",
-                      "emoji": true
+                      "type": "section",
+                      "fields": [
+                        {
+                          "type": "plain_text",
+                          "text": "Starting Automation Run!",
+                          "emoji": true
+                        }
+                      ]
                     }
                   ]
                 }
-              ]
-            }
-          event: always
+              event: always
       - run:
           name: Run tests
           command: | 
@@ -94,23 +97,3 @@ workflows:
              branches:
                only:
                  - <<pipeline.parameters.branch>>
-
-
-
-
-
-    # - run: 
-      #     name: Get previous artifact links
-      #     command: |
-      #       sudo apt -y install curl
-      #       curl --location -g --request GET 'https://circleci.com/api/v2/project/github/anneH/allure-playwright-example/380/artifacts' \
-      #       --header 'Content-Type: application/json' \
-      #       --header 'Accept: application/json' \
-      #       --header 'Circle-Token: $CIRCLE_TOKEN'
-      #       grep -o 'https:\/\/[^"]*Allure\/history\/.*\.json' > artifacts.txt || true
-          # when: always
-      # - run: cat artifacts.txt
-      # - run:
-      #     name: Download history artfacts
-      #     command: <artifacts.txt xargs -I % wget %?circle-token=$CIRCLE_TOKEN
-      #     when: always
