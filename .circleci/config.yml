@@ -34,6 +34,24 @@ jobs:
       - run: npm i -D playwright @playwright/test
       - run: npm i -D experimental-allure-playwright 
       - run: npm i -D allure-commandline
+      - slack/notify:
+          channel: general
+          custom: |
+            {
+              "blocks": [
+                {
+                  "type": "section",
+                  "fields": [
+                    {
+                      "type": "plain_text",
+                      "text": "Starting Automation Run!",
+                      "emoji": true
+                    }
+                  ]
+                }
+              ]
+            }
+          event: always
       - run:
           name: Run tests
           command: | 
