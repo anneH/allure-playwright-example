@@ -1,1 +1,44 @@
-{"uid":"83edc06c07f9ae9e47eb6dd1b683e4e2","children":[{"name":"should verify search result with valid repository name","uid":"c41f5782fa4ea1ae","parentUid":"83edc06c07f9ae9e47eb6dd1b683e4e2","status":"passed","time":{"start":1658547329910,"stop":1658547338157,"duration":8247},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[]},{"name":"should verify search result with valid repository name 2","uid":"b0d6d9cd36bd886f","parentUid":"83edc06c07f9ae9e47eb6dd1b683e4e2","status":"skipped","time":{"start":1658547338324,"stop":1658547338324,"duration":0},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[]},{"name":"should verify \"We couldn’t find any repositories\" message, after entering invalid keyword","uid":"f30839cae46ab923","parentUid":"83edc06c07f9ae9e47eb6dd1b683e4e2","status":"skipped","time":{"start":1658547338324,"stop":1658547338324,"duration":0},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[]}],"name":"packages"}
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "should verify search result with valid repository name",
+    "uid" : "c302db5cb31028a7",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1658550843241,
+      "stop" : 1658550851438,
+      "duration" : 8197
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
+    "uid" : "7e050dd684daef6f",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1658550851612,
+      "stop" : 1658550851612,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "should verify search result with valid repository name 2",
+    "uid" : "f359b0410fb1f1e1",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1658550851612,
+      "stop" : 1658550851612,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "packages"
+}
