@@ -1,11 +1,11 @@
 {
-  "uid" : "882a96ec777343a7",
+  "uid" : "548ddb4906d2d10f",
   "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
   "fullName" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
   "historyId" : " tests/github-search.test.ts GitHub - Search Result should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
   "time" : {
-    "start" : 1658608314582,
-    "stop" : 1658608314582,
+    "start" : 1658614602139,
+    "stop" : 1658614602139,
     "duration" : 0
   },
   "status" : "skipped",
@@ -41,12 +41,20 @@
       "statistic" : {
         "failed" : 0,
         "broken" : 0,
-        "skipped" : 40,
+        "skipped" : 41,
         "passed" : 0,
         "unknown" : 0,
-        "total" : 40
+        "total" : 41
       },
       "items" : [ {
+        "uid" : "882a96ec777343a7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1658608314582,
+          "stop" : 1658608314582,
+          "duration" : 0
+        }
+      }, {
         "uid" : "ff4f6f85ce82f15f",
         "status" : "skipped",
         "time" : {
@@ -198,18 +206,10 @@
           "stop" : 1657640343898,
           "duration" : 0
         }
-      }, {
-        "uid" : "a8b22dd1e64c5c59",
-        "status" : "skipped",
-        "time" : {
-          "start" : 1657611548277,
-          "stop" : 1657611548277,
-          "duration" : 0
-        }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "882a96ec777343a7.json",
+  "source" : "548ddb4906d2d10f.json",
   "parameterValues" : [ ]
 }
