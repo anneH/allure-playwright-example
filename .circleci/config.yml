@@ -28,7 +28,7 @@ jobs:
       # - run: npm install
       # - run: npm install -g docker 
       # - run: docker exec -u root -t -i container_id /bin/bash
-      # - run: apt-get update
+      - run: apt-get update
       - run: apt-get -y install sudo
       # - run: sudo apt install openjdk-8-jdk -y
       # - run: export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
