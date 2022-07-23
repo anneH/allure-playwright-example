@@ -1,11 +1,11 @@
 {
-  "uid" : "48098ccd6b75d059",
-  "name" : "should verify search result with valid repository name 2",
-  "fullName" : "should verify search result with valid repository name 2",
-  "historyId" : " tests/github-search.test.ts GitHub - Search Result should verify search result with valid repository name 2",
+  "uid" : "66cfb9df86749561",
+  "name" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
+  "fullName" : "should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
+  "historyId" : " tests/github-search.test.ts GitHub - Search Result should verify \"We couldn’t find any repositories\" message, after entering invalid keyword",
   "time" : {
-    "start" : 1658595622597,
-    "stop" : 1658595622597,
+    "start" : 1658603711191,
+    "stop" : 1658603711191,
     "duration" : 0
   },
   "status" : "skipped",
@@ -41,13 +41,21 @@
       "statistic" : {
         "failed" : 0,
         "broken" : 0,
-        "skipped" : 37,
+        "skipped" : 38,
         "passed" : 0,
         "unknown" : 0,
-        "total" : 37
+        "total" : 38
       },
       "items" : [ {
-        "uid" : "fd111c6d0cf53cbb",
+        "uid" : "b072af0175299f09",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1658595622597,
+          "stop" : 1658595622597,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "422eb7578cb2ba53",
         "status" : "skipped",
         "time" : {
           "start" : 1658595417678,
@@ -55,7 +63,7 @@
           "duration" : 0
         }
       }, {
-        "uid" : "9eba17a02f107945",
+        "uid" : "bc1e2fa17074755b",
         "status" : "skipped",
         "time" : {
           "start" : 1658593734021,
@@ -63,15 +71,15 @@
           "duration" : 0
         }
       }, {
-        "uid" : "86bcbf064821503b",
+        "uid" : "e7b4d9b5a6695eb9",
         "status" : "skipped",
         "time" : {
-          "start" : 1658593189407,
-          "stop" : 1658593189407,
+          "start" : 1658593189408,
+          "stop" : 1658593189408,
           "duration" : 0
         }
       }, {
-        "uid" : "1f42b57a8ec5c9ba",
+        "uid" : "d9d6d71a9df22c04",
         "status" : "skipped",
         "time" : {
           "start" : 1658590728511,
@@ -79,7 +87,7 @@
           "duration" : 0
         }
       }, {
-        "uid" : "f4bb8cab683e974c",
+        "uid" : "988cafe7714e0c71",
         "status" : "skipped",
         "time" : {
           "start" : 1658561927376,
@@ -87,15 +95,15 @@
           "duration" : 0
         }
       }, {
-        "uid" : "7bc90ab3b08cec7",
+        "uid" : "38a644ac31222381",
         "status" : "skipped",
         "time" : {
-          "start" : 1658551437596,
-          "stop" : 1658551437596,
+          "start" : 1658551437597,
+          "stop" : 1658551437597,
           "duration" : 0
         }
       }, {
-        "uid" : "d1e978b6d92eff10",
+        "uid" : "56cbb3a27153ee4d",
         "status" : "skipped",
         "time" : {
           "start" : 1658551012484,
@@ -103,7 +111,7 @@
           "duration" : 0
         }
       }, {
-        "uid" : "f359b0410fb1f1e1",
+        "uid" : "7e050dd684daef6f",
         "status" : "skipped",
         "time" : {
           "start" : 1658550851612,
@@ -111,7 +119,7 @@
           "duration" : 0
         }
       }, {
-        "uid" : "b0d6d9cd36bd886f",
+        "uid" : "f30839cae46ab923",
         "status" : "skipped",
         "time" : {
           "start" : 1658547338324,
@@ -119,15 +127,15 @@
           "duration" : 0
         }
       }, {
-        "uid" : "bec850c51e54ca8f",
+        "uid" : "d379e77e03088fd6",
         "status" : "skipped",
         "time" : {
-          "start" : 1658365832065,
-          "stop" : 1658365832065,
+          "start" : 1658365832066,
+          "stop" : 1658365832066,
           "duration" : 0
         }
       }, {
-        "uid" : "c10be40157c9bf91",
+        "uid" : "93859c55f72250f8",
         "status" : "skipped",
         "time" : {
           "start" : 1657901736636,
@@ -135,7 +143,7 @@
           "duration" : 0
         }
       }, {
-        "uid" : "b0b36a6134cbab82",
+        "uid" : "970b85c20dfe4f3b",
         "status" : "skipped",
         "time" : {
           "start" : 1657900313837,
@@ -143,7 +151,7 @@
           "duration" : 0
         }
       }, {
-        "uid" : "a023cf0b6eb3d4b4",
+        "uid" : "d2059d6575187499",
         "status" : "skipped",
         "time" : {
           "start" : 1657899183935,
@@ -151,7 +159,7 @@
           "duration" : 0
         }
       }, {
-        "uid" : "e8ede105b1559658",
+        "uid" : "e91cd73087334517",
         "status" : "skipped",
         "time" : {
           "start" : 1657725614075,
@@ -159,15 +167,15 @@
           "duration" : 0
         }
       }, {
-        "uid" : "b0439defd585dc68",
+        "uid" : "3c318f5aaae6c8d4",
         "status" : "skipped",
         "time" : {
-          "start" : 1657697933550,
-          "stop" : 1657697933550,
+          "start" : 1657697933551,
+          "stop" : 1657697933551,
           "duration" : 0
         }
       }, {
-        "uid" : "2f7979d27a7882fd",
+        "uid" : "ff10724bc580ac95",
         "status" : "skipped",
         "time" : {
           "start" : 1657640343898,
@@ -175,15 +183,15 @@
           "duration" : 0
         }
       }, {
-        "uid" : "7c0e6601574f0632",
+        "uid" : "a8b22dd1e64c5c59",
         "status" : "skipped",
         "time" : {
-          "start" : 1657611548276,
-          "stop" : 1657611548276,
+          "start" : 1657611548277,
+          "stop" : 1657611548277,
           "duration" : 0
         }
       }, {
-        "uid" : "3ba3bca34a81b357",
+        "uid" : "72db4a26a0967c6d",
         "status" : "skipped",
         "time" : {
           "start" : 1657553950171,
@@ -191,25 +199,17 @@
           "duration" : 0
         }
       }, {
-        "uid" : "8ad1314655c4afca",
+        "uid" : "5af43efc2ca2d29a",
         "status" : "skipped",
         "time" : {
           "start" : 1657525147504,
           "stop" : 1657525147504,
           "duration" : 0
         }
-      }, {
-        "uid" : "f52c12e15d725c40",
-        "status" : "skipped",
-        "time" : {
-          "start" : 1657467540346,
-          "stop" : 1657467540346,
-          "duration" : 0
-        }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "48098ccd6b75d059.json",
+  "source" : "66cfb9df86749561.json",
   "parameterValues" : [ ]
 }
