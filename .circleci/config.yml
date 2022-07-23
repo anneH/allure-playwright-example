@@ -7,15 +7,6 @@ parameters:
   slack_notify:
     type: boolean
     default: false
-  branch_filter:
-     type: string
-     default: circleci-project-setup
-  scheduled: 
-    type: boolean
-    default: true
-  environment: 
-    type: string
-    default: stage
 orbs:
   slack: circleci/slack@4.10.1
 jobs:
@@ -90,8 +81,7 @@ workflows:
   e2e-test-workflow:
     jobs:
       - playwright-test:
-           context: <<pipeline.parameters.environment>>
-            #  slack
+           context: slack
            post-steps:
              - when:
                 condition: <<pipeline.parameters.slack_notify>>
@@ -100,14 +90,7 @@ workflows:
                     channel: general
                     mentions: "<https://anneh.github.io/allure-playwright-example/|Test Results> or go to 'View job' > Artifacts > allure-report/index.html"      
     
-    when: <<pipeline.parameters.scheduled>>
-    triggers:
-      - schedule:
-          cron: '0 1 * * 4'
-          filters: 
-             branches:
-                  only:
-                    - <<pipeline.parameters.branch_filter>>
+   
            
           #  filters:
           #    branches:
