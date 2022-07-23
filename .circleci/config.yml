@@ -33,7 +33,7 @@ jobs:
       # - run: apt-get update
       # - run: apt-get -y install sudo
       # - run: sudo apt install openjdk-8-jdk -y
-      # - run: export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+      - run: export JAVA_HOME=$(echo $JAVA_HOME)
       - run: export PATH=$PATH:$JAVA_HOME/bin
       # - run: which java
       - run: npm i -D playwright @playwright/test
