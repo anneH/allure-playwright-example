@@ -24,6 +24,7 @@ jobs:
           fingerprints:
             - "d6:36:58:af:d8:57:47:db:30:77:62:ea:40:f7:03:03"
       - checkout
+      - run: mkdir requirements.txt && cd requirements.txt
       - restore_cache:
            key: v1-deps-{{ checksum "requirements.txt" }}
       - run: apt-get update
