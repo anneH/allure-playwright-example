@@ -9,7 +9,7 @@ parameters:
     default: false
 orbs:
   slack: circleci/slack@4.10.1
-  java: ci-poc/java@0.0.22
+  allure: ayte/allure@0.1.3
 jobs:
   playwright-test:
     docker:
@@ -22,7 +22,7 @@ jobs:
             - "d6:36:58:af:d8:57:47:db:30:77:62:ea:40:f7:03:03"
       - checkout
       - run: npm install
-      - run: npm install -g docker 
+      # - run: npm install -g docker 
       # - run: docker exec -u root -t -i container_id /bin/bash
       # - run: apt-get update
       # - run: apt-get -y install sudo
@@ -31,7 +31,7 @@ jobs:
       # - run: export PATH=$PATH:$JAVA_HOME/bin
       - run: npm i -D playwright @playwright/test
       - run: npm i -D experimental-allure-playwright 
-      - run: npm i -D allure-commandline
+      # - run: npm i -D allure-commandline
       - when:
           condition: <<pipeline.parameters.slack_notify>>
           steps:
