@@ -22,12 +22,20 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 47,
+      "skipped" : 48,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 47
+      "total" : 48
     },
     "items" : [ {
+      "uid" : "2ff2a8163e4db711",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1658621064176,
+        "stop" : 1658621064176,
+        "duration" : 0
+      }
+    }, {
       "uid" : "acec67547cbbd9b1",
       "status" : "skipped",
       "time" : {
@@ -179,14 +187,6 @@
         "stop" : 1658550851612,
         "duration" : 0
       }
-    }, {
-      "uid" : "b0d6d9cd36bd886f",
-      "status" : "skipped",
-      "time" : {
-        "start" : 1658547338324,
-        "stop" : 1658547338324,
-        "duration" : 0
-      }
     } ]
   },
   " tests/github-search.test.ts GitHub - Search Result should verify search result with valid repository name" : {
@@ -194,11 +194,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 47,
+      "passed" : 48,
       "unknown" : 0,
-      "total" : 47
+      "total" : 48
     },
     "items" : [ {
+      "uid" : "cf0b6c01444bd6a0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1658621053609,
+        "stop" : 1658621063966,
+        "duration" : 10357
+      }
+    }, {
       "uid" : "b26ec32316ccb660",
       "status" : "passed",
       "time" : {
@@ -350,26 +358,26 @@
         "stop" : 1658550851438,
         "duration" : 8197
       }
-    }, {
-      "uid" : "c41f5782fa4ea1ae",
-      "status" : "passed",
-      "time" : {
-        "start" : 1658547329910,
-        "stop" : 1658547338157,
-        "duration" : 8247
-      }
     } ]
   },
   " tests/github-search.test.ts GitHub - Search Result should verify \"We couldn’t find any repositories\" message, after entering invalid keyword" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 47,
+      "skipped" : 48,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 47
+      "total" : 48
     },
     "items" : [ {
+      "uid" : "87834843c2f180ad",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1658621064177,
+        "stop" : 1658621064177,
+        "duration" : 0
+      }
+    }, {
       "uid" : "f954de6ad8f98fad",
       "status" : "skipped",
       "time" : {
@@ -519,14 +527,6 @@
       "time" : {
         "start" : 1658550851612,
         "stop" : 1658550851612,
-        "duration" : 0
-      }
-    }, {
-      "uid" : "f30839cae46ab923",
-      "status" : "skipped",
-      "time" : {
-        "start" : 1658547338324,
-        "stop" : 1658547338324,
         "duration" : 0
       }
     } ]

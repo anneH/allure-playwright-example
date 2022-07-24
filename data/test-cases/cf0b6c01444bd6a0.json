@@ -1,12 +1,12 @@
 {
-  "uid" : "b26ec32316ccb660",
+  "uid" : "cf0b6c01444bd6a0",
   "name" : "should verify search result with valid repository name",
   "fullName" : "should verify search result with valid repository name",
   "historyId" : " tests/github-search.test.ts GitHub - Search Result should verify search result with valid repository name",
   "time" : {
-    "start" : 1658620425652,
-    "stop" : 1658620431255,
-    "duration" : 5603
+    "start" : 1658621053609,
+    "stop" : 1658621063966,
+    "duration" : 10357
   },
   "status" : "passed",
   "flaky" : false,
@@ -42,11 +42,19 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 47,
+        "passed" : 48,
         "unknown" : 0,
-        "total" : 47
+        "total" : 48
       },
       "items" : [ {
+        "uid" : "b26ec32316ccb660",
+        "status" : "passed",
+        "time" : {
+          "start" : 1658620425652,
+          "stop" : 1658620431255,
+          "duration" : 5603
+        }
+      }, {
         "uid" : "e4988ba94fc0f0e2",
         "status" : "passed",
         "time" : {
@@ -198,18 +206,10 @@
           "stop" : 1658547338157,
           "duration" : 8247
         }
-      }, {
-        "uid" : "baf0d1c332fe6397",
-        "status" : "passed",
-        "time" : {
-          "start" : 1658365823558,
-          "stop" : 1658365832065,
-          "duration" : 8507
-        }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "b26ec32316ccb660.json",
+  "source" : "cf0b6c01444bd6a0.json",
   "parameterValues" : [ ]
 }
