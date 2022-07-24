@@ -24,17 +24,16 @@ jobs:
           fingerprints:
             - "d6:36:58:af:d8:57:47:db:30:77:62:ea:40:f7:03:03"
       - checkout
-      - run: mkdir requirements.txt && cd requirements.txt
       - restore_cache:
-           key: v1-deps-{{ checksum "requirements.txt" }}
+           key: v1-deps-{{ checksum "/java-8-openjdk-amd64" }}
       - run: apt-get update
       - run: apt-get -y install sudo
       - run: sudo apt install openjdk-8-jdk -y
       - run: export PATH=$PATH:$JAVA_HOME/bin
       - save_cache:
-           key: v1-deps-{{ checksum "requirements.txt" }}
+           key: v1-deps-{{ checksum "/java-8-openjdk-amd64" }}
            paths: 
-             - "."
+             - "/usr/lib/jvm/java-8-openjdk-amd64"
       # - restore_cache:
       #     key: v1-deps-{{ checksum ".cache/ms-playwright" }}
       - run: npm i -D playwright @playwright/test
